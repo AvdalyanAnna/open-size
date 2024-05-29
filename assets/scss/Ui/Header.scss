@@ -1,0 +1,63 @@
+.header{
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  &-inner{
+    max-width: 1522px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-menu{
+    @apply lg:gap-[42px] gap-8;
+    &-item {
+      font-size: 17px;
+      line-height: 21px;
+      color: #505050;
+    }
+    &-btn{
+      width: 197px;
+      font-family: "Wix Madefor Text", sans-serif;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 13px 10px;
+      background: #5BA8A0;
+      @media screen and (max-width: 900px) {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+.ru{
+  .header{
+
+    &-menu{
+      @apply lg:gap-[31px] gap-8;
+      &-item{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &-btn{
+        width: 197px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.06em;
+        padding: 16px 10px;
+        @media screen and (max-width: 900px) {
+          width: fit-content;
+
+        }
+      }
+    }
+  }
+}
