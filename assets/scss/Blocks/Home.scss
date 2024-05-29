@@ -7,4 +7,47 @@
       object-fit: cover;
     }
   }
+  &-sliders-title{
+    font-family: 'Familjen Grotesk',sans-serif;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #202020;
+    max-width: 635px;
+    margin-left: auto;
+    span{
+      &:nth-child(1){
+        font-weight: 400;
+      }
+      &:nth-child(2){
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.ru{
+  .home{
+    &-sliders-title{
+      font-family: 'Nunito Sans',sans-serif;
+      font-weight: 400;
+      font-size: 51px;
+      line-height: 120%;
+      max-width: 625px;
+
+      span{
+        &:nth-child(1){
+          font-weight: 900;
+        }
+        &:nth-child(2){
+          display: unset;
+          font-weight: 400;
+        }
+      }
+
+
+    }
+  }
 }

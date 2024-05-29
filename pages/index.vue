@@ -28,13 +28,11 @@ const {locale } = useI18n()
   <div class="home-gif ">
     <img :src="locale === 'ru'? '/img/home-gif-ru.png' :'/img/home-gif.png'" class="w-full" alt="Banner">
   </div>
-  <div class="flex items-end justify-between lg:mt-[181px] mt-10 z-0 px-2 lg:px-0">
+  <div class="flex items-end justify-between lg:mt-[160px] mt-10 z-0 px-2 lg:px-0">
     <div class="w-[49%]">
-      <h2 class="w-fit ml-0 lg:ml-auto leading-normal mb-[20px] text-lg lg:text-[51px] lg:leading-[55px] ">
-        <span class="font-bold">
-          {{$t('home.block1.titleBold')}}
-        </span>
-        {{$t('home.block1.title')}}
+      <h2 class="home-sliders-title w-fit ml-0 lg:ml-auto leading-normal mb-[20px] text-lg lg:text-[51px] lg:leading-[55px] ">
+        <span v-html="$t('home.block1.titleBold')"></span>
+        <span>{{$t('home.block1.title')}}</span>
       </h2>
       <Swiper
           class="mx-auto w-full"
@@ -76,13 +74,12 @@ const {locale } = useI18n()
   </div>
 
   <div class="default-width mx-auto lg:mt-[160px] mt-10 px-2 lg:px-0">
-    <h2 class="text-lg font-bold leading-normal lg:leading-[70px] lg:text-[89px]">Reduce your carbon
-      <br>footprint and reduce costs</h2>
+    <h2 class="text-lg font-bold leading-normal lg:leading-[70px] lg:text-[89px]">
+      {{$t('home.block2.title')}}
+    </h2>
     <div class="flex items-end lg:mt-[30px] mt-2 flex-col lg:flex-row gap-4">
-      <h2 class="lg:text-[20px] font-light lg:leading-[29.9px] leading-normal text-sm">Significant reduction in CO2
-        emissions due to reduced
-        overproduction and a multifold
-        <br>reduction in returns of ill-fitting clothing and shoes for online trading</h2>
+      <h2 class="lg:text-[20px] font-light lg:leading-[29.9px] leading-normal text-sm">
+        {{$t('home.block2.description')}}</h2>
       <More class="ml-auto"/>
     </div>
     <h2 class="text-center mt-6 leading-normal text-lg lg:text-[60px] lg:leading-[70px] lg:mt-[40px]">
