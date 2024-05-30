@@ -1,6 +1,6 @@
 <template>
-  <Green>
-    Узнать больше
+  <Green class="uppercase">
+    {{ $t('btnMore') }}
     <img src="/Group%2091.svg" width="20" alt="">
   </Green>
 </template>

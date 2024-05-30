@@ -13,6 +13,12 @@ export default defineNuxtConfig({
         defaultLocale: 'en',
         strategy: 'prefix_and_default',
         langDir: './lang',
+        compilation:{
+            strictMessage: false,
+        },
+        precompile: {
+            strictMessage: false,
+        },
         locales: [
             {
                 code: 'en',
@@ -23,10 +29,6 @@ export default defineNuxtConfig({
                 file: 'ru.js',
             },
         ],
-        detectBrowserLanguage: {
-            useCookie: true,
-            alwaysRedirect: false
-        }
     },
     runtimeConfig: {
         public: {
