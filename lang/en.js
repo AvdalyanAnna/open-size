@@ -31,6 +31,43 @@ export default {
         block6: {
             title: '<b>Digital twins of shoes and clothing </b>',
             desc: 'To study the digital comfort of brand products and subsequent reverse engineering, OpenSize carries out 3D digital measurements of the internal volumes of samples of manufactured clothing and shoes. <span></span> High-precision digital twins of the internal topology of clothing and footwear models are measured and created in OpenSize industrial certification labs immediately after production. Measurement labs are located in the places where shoes and clothing of world brands are produced, which simplifies logistics.'
+        },
+        block7: {
+            title: '<b>E-Comfort Certificate </b> for Clothing and Footwear',
+            desc: 'E-comfort certificate for clothing and footwear models serves as additional standards for efficient production'
+        },
+        block8: {
+            title: '<b>OpenSize mobile platform is the path to the world of e-fittings and online shopping </b>',
+            desc: 'Try the 3D Foot Scanner mobile app from OpenSize, check the reliability of the digital try on and build trust in the service',
+            btn:'Request a demo'
+        },
+        block9: {
+            title: '<b>OpenSize, NFT and Meta-Universe</b>',
+            desc1: 'Open Size E-Comfort Certificate for clothing and footwear fits seamlessly into NFT, along with identification of the authenticity of products and manufacturing history',
+            desc2: 'E-comfort can play a significant role in the overall process of digitalization of the fashion industry and act as a bridging element in the structure of the Meta-Universe',
+        },
+        form:{
+            title:'<b>OpenSize is a powerful tool</b> to improve fashion production efficiency and sustainability',
+            description:'OpenSize is based on technology that combines into a single cycle a parameterized and statistically based assessment of comfort by the consumer, his digital anthropometric data and digital parameters of the internal topology of shoes and clothing, taking into account materials',
+            list:{
+                item1:'Ensures your business is compliant with EGS requirements and improves the performance of your Carbon Handprint Metric',
+                item2:'Reduces returns for online sales to below 10%',
+                item3:'Increases income through sales growth',
+                item4:'Provides certified parameterized data for reverse engineering of shoe lasts and patterns of comfortable models for different local markets',
+                item5:'Increases conversion to over 50%',
+                item6:'Maintains high level of customer loyalty',
+            },
+            inner:{
+                title:'Fill out the form to schedule a free demo with an OpenSize expert',
+                subTitle:'I would like to receive more <br> information on the topic:',
+                name:'Name*',
+                surname:'Surname*',
+                city:'Сountry*',
+                company:'Company name*  ',
+                email:'E-mail address*',
+                message:'Increase conversion for online sales',
+                btn:'SUBMIT',
+            }
         }
     },
 

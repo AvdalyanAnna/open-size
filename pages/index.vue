@@ -20,7 +20,7 @@ import VideoPlayer from "~/components/Video.vue";
 import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
 import VHomeForm from "~/components/Blocks/Home/vHomeForm.vue";
 
-const {locale } = useI18n()
+const {locale} = useI18n()
 
 </script>
 <template>
@@ -32,7 +32,7 @@ const {locale } = useI18n()
     <div class="w-[49%]">
       <h2 class="home-sliders-title w-fit ml-0 lg:ml-auto leading-normal mb-[20px] text-lg lg:text-[51px] lg:leading-[55px] ">
         <span v-html="$t('home.block1.titleBold')"></span>
-        <span>{{$t('home.block1.title')}}</span>
+        <span>{{ $t('home.block1.title') }}</span>
       </h2>
       <Swiper
           class="mx-auto w-full"
@@ -76,11 +76,11 @@ const {locale } = useI18n()
   <div class="home-block2 mx-auto  px-2 lg:px-0">
     <div class="wrapper">
       <h2 class="home-block2-title text-lg font-bold leading-normal lg:leading-[70px] lg:text-[89px]">
-        {{$t('home.block2.title')}}
+        {{ $t('home.block2.title') }}
       </h2>
       <div class="flex items-end justify-between  flex-col lg:flex-row gap-4">
         <p class="home-block2-desc lg:text-[20px] font-light lg:leading-[29.9px] leading-normal text-sm">
-          {{$t('home.block2.description')}}</p>
+          {{ $t('home.block2.description') }}</p>
         <More class="home-block2-btn ml-auto"/>
       </div>
 
@@ -92,11 +92,11 @@ const {locale } = useI18n()
             class="home-block3-title text-center mt-6 leading-normal text-lg lg:text-[60px] lg:leading-[70px]">
         </h2>
         <div class="bg-[#F8FEE2] home-block3-color">
-         <div>
-           <p v-html="$t('home.block3.description1')" class="home-block3-desc w-full ">
-           </p>
-         </div>
-          <v-video />
+          <div>
+            <p v-html="$t('home.block3.description1')" class="home-block3-desc w-full ">
+            </p>
+          </div>
+          <v-video/>
           <div class="home-block3-color home-block3-color-last">
             <p v-html="$t('home.block3.description2')" class="home-block3-desc w-full ">
             </p>
@@ -105,7 +105,7 @@ const {locale } = useI18n()
         </div>
       </div>
     </div>
-<!--    <Video/>-->
+    <!--    <Video/>-->
   </div>
   <div class="home-block4">
     <h2 v-html="$t('home.block4.title')" class="home-block4-title  text-center ">
@@ -170,12 +170,12 @@ const {locale } = useI18n()
     </Swiper>
   </div>
 
-  <div class="default-width mx-auto lg:mt-[80px] mt-6 overflow-hidden px-2 lg:px-0">
+  <div class="wrapper mx-auto lg:mt-[80px] mt-6 overflow-hidden px-2 lg:px-0">
     <div class="flex lg:justify-between lg:flex-row flex-col gap-2">
       <div class="lg:w-[49%] flex-col">
         <h2 v-html="$t('home.block5.title')" class="title lg:mb-[54px] mb-[30px]">
         </h2>
-        <p v-html="$t('home.block5.desc')"  class="description"> </p>
+        <p v-html="$t('home.block5.desc')" class="description"></p>
 
         <More class="home-block2-btn lg:mt-[50px] mt-3"/>
       </div>
@@ -190,116 +190,86 @@ const {locale } = useI18n()
       </div>
     </div>
 
+    <div>
+      <h2 v-html="$t('home.block7.title')" class="title-big text-center bold-block"></h2>
+      <div class="lg:mt-[50px] mt-4 flex lg:items-end lg:flex-row flex-col gap-1">
+        <h2 v-html="$t('home.block7.desc')" class="lg:w-[487px] title-sub"></h2>
+        <img class="lg:w-[417px] lg:mx-[20px] w-full hidden lg:block" src="/Rectangle%20128.png" alt="">
+        <img class="lg:w-[417px] w-full hidden lg:block" src="/Rectangle%20129.png" alt="">
+      </div>
+      <div class="w-full lg:hidden flex flex-row gap-1 justify-between overflow-hidden px-2 lg:px-0 mt-1">
+        <img class="w-1/2" src="/Rectangle%20128.png" alt="">
+        <img class="w-1/2" src="/Rectangle%20129.png" alt="">
+      </div>
+      <div class="bg-[#F8FEE2] w-full mt-1 lg:hidden flex flex-row gap-1 overflow-hidden px-2 lg:px-0">
+        <img src="/Rectangle%20130.png" class="w-1/3" alt="">
+        <img src="/Rectangle%20131.png" class="w-1/3" alt="">
+        <img src="/Rectangle%20132.png" class="w-1/3" alt="">
+      </div>
+    </div>
   </div>
-<!--    <h2 class="lg:text-center lg:text-[80px] lg:mt-[60px] font-semibold lg:leading-[88px] leading-normal mt-6 text-lg">-->
-<!--      <span class="font-bold">E-Comfort Certificate</span><br>for Clothing and Footwear</h2>-->
-<!--    <div class="lg:mt-[50px] mt-4 flex lg:items-end lg:flex-row flex-col gap-1">-->
-<!--      <h2 class="lg:w-[417px] font-light lg:leading-[58px] lg:text-[45px] leading-normal text-md">-->
-<!--        E-comfort certificate-->
-<!--        <br>for clothing and-->
-<!--        <br>footwear models-->
-<!--        <br>serves as additional-->
-<!--        <br>standards for efficient-->
-<!--        <br>production-->
-<!--      </h2>-->
-<!--      <img class="lg:w-[417px] lg:mx-[20px] w-full hidden lg:block" src="/Rectangle%20128.png" alt="">-->
-<!--      <img class="lg:w-[417px] w-full hidden lg:block" src="/Rectangle%20129.png" alt="">-->
-<!--    </div>-->
-<!--  </div>-->
-<!--  <div class="w-full lg:hidden flex flex-row gap-1 justify-between overflow-hidden px-2 lg:px-0 mt-1">-->
-<!--    <img class="w-1/2" src="/Rectangle%20128.png" alt="">-->
-<!--    <img class="w-1/2" src="/Rectangle%20129.png" alt="">-->
-<!--  </div>-->
-<!--  <div class="bg-[#F8FEE2] w-full mt-1 lg:hidden flex flex-row gap-1 overflow-hidden px-2 lg:px-0">-->
-<!--    <img src="/Rectangle%20130.png" class="w-1/3" alt="">-->
-<!--    <img src="/Rectangle%20131.png" class="w-1/3" alt="">-->
-<!--    <img src="/Rectangle%20132.png" class="w-1/3" alt="">-->
-<!--  </div>-->
-<!--  <div class="justify-between w-fit mx-auto mt-1 items-end lg:hidden flex flex-row gap-1 overflow-hidden px-2 lg:px-0">-->
-<!--    <img src="/Rectangle%20135.png" class="w-1/2" alt="">-->
-<!--    <img src="/Rectangle%20134.png" class="w-1/2" alt="">-->
-<!--  </div>-->
-<!--  <More class="mt-1 ml-auto lg:hidden"/>-->
-<!--  <div class="bg-[#F8FEE2] w-full  mt-[20px] hidden lg:flex">-->
-<!--    <img src="/Rectangle%20130.png" class="mx-[10px] w-[417px]" alt="">-->
-<!--    <img src="/Rectangle%20131.png" class="mx-[10px] w-[417px]" alt="">-->
-<!--    <img src="/Rectangle%20132.png" class="mx-[10px] w-[417px]" alt="">-->
-<!--  </div>-->
-<!--  <div class="justify-center w-fit mx-auto mt-[20px] items-end hidden lg:flex ">-->
-<!--    <img src="/Rectangle%20135.png" alt="">-->
-<!--    <img src="/Rectangle%20134.png" class="mx-[20px]" alt="">-->
-<!--    <More class="ml-[80px]"/>-->
-<!--  </div>-->
+  <div class="justify-between w-fit mx-auto mt-1 items-end lg:hidden flex flex-row gap-1 overflow-hidden px-2 lg:px-0">
+    <img src="/Rectangle%20135.png" class="w-1/2" alt="">
+    <img src="/Rectangle%20134.png" class="w-1/2" alt="">
+  </div>
+  <More class="home-block2-btn mt-1 ml-auto lg:hidden"/>
+  <div class="bg-[#F8FEE2] w-full  mt-[20px] hidden lg:flex">
+    <img src="/Rectangle%20130.png" class="mx-[10px] w-[417px]" alt="">
+    <img src="/Rectangle%20131.png" class="mx-[10px] w-[417px]" alt="">
+    <img src="/Rectangle%20132.png" class="mx-[10px] w-[417px]" alt="">
+  </div>
+  <div class="justify-center w-fit mx-auto mt-[20px] items-end hidden lg:flex ">
+    <img src="/Rectangle%20135.png" alt="">
+    <img src="/Rectangle%20134.png" class="mx-[20px]" alt="">
+    <More class="home-block2-btn ml-[80px]"/>
+  </div>
 
 
-<!--  <div class="default-width mx-auto lg:mt-[80px] mt-6 px-2 lg:px-0">-->
-<!--    <div class="flex justify-between flex-col lg:flex-row">-->
-<!--      <div class="w-full lg:w-[49%] flex-col">-->
-<!--        <h2 class="lg:text-[59px] lg:leading-[67px] text-lg leading-normal hidden lg:block">-->
-<!--             <span class="font-bold"> OpenSize mobile-->
-<!--               <br>platform-->
-<!--               <br>is the path to the-->
-<!--               <br>world of e-fittings-->
-<!--               <br>and online shopping</span>-->
-<!--        </h2>-->
-<!--        <h2 class="lg:text-[59px] lg:leading-[67px] text-lg leading-normal lg:hidden">-->
-<!--          <span-->
-<!--              class="font-bold"> OpenSize mobile platform is the path to the world of e-fittings and online shopping</span>-->
-<!--        </h2>-->
+  <div class="default-width mx-auto lg:mt-[140px] mt-6 px-2 lg:px-0">
+    <div class="flex justify-between flex-col lg:flex-row">
+      <div class="w-full lg:w-[49%] flex-col">
+        <h2 v-html="$t('home.block8.title')"
+            class="title">
+        </h2>
+        <p v-html="$t('home.block8.desc')" class="relative  lg:mt-[100px] mt-4 description"></p>
+        <br>
+        <img src="/Rectangle%20113%20(2).png" class="w-full lg:hidden" alt="">
+        <div class="flex items-center lg:mt-[75px] mt-2">
+          <More class="home-block2-btn mr-[20px]"/>
+          <button class=" text-white uppercase bg-[#5BA8A0] lg:px-[20px] py-1  lg:py-[10px] px-1  font-light">
+            {{ $t('home.block8.btn') }}
+          </button>
+        </div>
+      </div>
+      <img src="/Rectangle%20113%20(2).png" class="w-[49%] hidden lg:block" alt="">
+    </div>
+    <div class="lg:mt-[130px] mt-6">
+      <h2 v-html="$t('home.block9.title')" class="title-big text-center"></h2>
+      <div class="flex justify-between items-center lg:mt-[60px] mt-4 flex-col gap-2 md:flex-row md:gap-0">
+        <div class="flex items-center w-full">
+          <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">
+          <span class="description">{{$t('home.block9.desc1')}}</span>
+        </div>
+        <div class="flex items-center w-full">
+          <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">
+          <span class="description">{{ $t('home.block9.desc2')}}</span>
+        </div>
+      </div>
+      <div class="flex lg:items-end mt-[60px] flex-col lg:flex-row items-center">
+        <img src="/Rectangle%20137.png" class="w-full lg:w-[80%]" alt="">
+        <More class="ml-auto lg:mt-0 lg:ml-4"/>
+      </div>
+    </div>
+    <v-home-form />
+  </div>
 
-<!--        <p class="relative lg:text-[23px] lg:mt-[100px] mt-4 hidden lg:block">-->
-<!--          Try the 3D Foot Scanner mobile app from OpenSize, check the reliability of the digital try on and build trust-->
-<!--          in-->
-<!--          <br>the service-->
-<!--        </p>-->
-
-<!--        <p class="relative lg:text-[23px] lg:mt-[100px] mt-4 lg:hidden">-->
-<!--          Try the 3D Foot Scanner mobile app from OpenSize, check the reliability of the digital try on and build trust-->
-<!--          in the service-->
-<!--        </p>-->
-<!--        <br>-->
-
-<!--        <img src="/Rectangle%20113%20(2).png" class="w-full lg:hidden" alt="">-->
-
-<!--        <div class="flex items-center lg:mt-[75px] mt-2">-->
-<!--          <More class="mr-[20px]"/>-->
-<!--          <button class="text-white bg-[#5BA8A0] lg:px-[10px] py-1  lg:py-[10px] px-1  font-light">ЗАПРОСИТЬ-->
-<!--            ДЕМОНСТРАЦИЮ-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <img src="/Rectangle%20113%20(2).png" class="w-[49%] hidden lg:block" alt="">-->
-<!--    </div>-->
 
 
-<!--    <h2 class="lg:text-[79px] font-bold text-center lg:mt-[120px] mt-6 text-lg">OpenSize, NFT and Meta-Universe</h2>-->
-<!--    <div class="flex justify-between items-center lg:mt-[60px] mt-4 flex-col gap-2 md:flex-row md:gap-0">-->
-<!--      <div class="flex items-center w-full">-->
-<!--        <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">-->
-<!--        <span class="lg:text-[23px] text-sm md:text-md hidden lg:block">Open Size E-Comfort Certificate for clothing and footwear fits seamlessly into NFT, along with identification of the authenticity of products and manufacturing history</span>-->
-<!--        <span class="lg:text-[23px] text-sm md:text-md lg:hidden">Open Size E-Comfort Certificate for clothing and footwear fits seamlessly into NFT, along with identification of the authenticity of products and manufacturing history</span>-->
-<!--      </div>-->
-<!--      <div class="flex items-center w-full">-->
-<!--        <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">-->
-<!--        <span class="lg:text-[23px] text-sm md:text-md hidden lg:block">E-comfort can play a significant role in the-->
-<!--                <br>overall process of digitalization of the fashion-->
-<!--                <br>industry and act as a bridging element in the-->
-<!--                <br>structure of the Meta-Universe</span>-->
-
-<!--        <span class="lg:text-[23px] text-sm md:text-md lg:hidden">E-comfort can play a significant role in the overall process of digitalization of the fashion industry and act as a bridging element in the structure of the Meta-Universe</span>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="flex lg:items-end mt-[60px] flex-col lg:flex-row items-center">-->
-<!--      <img src="/Rectangle%20137.png" class="w-full lg:w-[80%]" alt="">-->
-<!--      <More class="ml-auto lg:mt-0 lg:ml-4"/>-->
-<!--    </div>-->
-
-<!--<v-home-form />-->
-<!--  </div>-->
-<!--  <div class="overflow-hidden w-full px-2 lg:px-0">-->
-<!--    <Last/>-->
-<!--  </div>-->
-<!--  <Footer/>-->
+  <!--  </div>-->
+    <div class="overflow-hidden w-full px-2 lg:px-0">
+      <Last/>
+    </div>
+    <Footer/>
 </template>
 
 <style>
