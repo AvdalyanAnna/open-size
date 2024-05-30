@@ -1,14 +1,16 @@
-.home{
-  &-gif{
+.home {
+  &-gif {
     height: 100vh;
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  &-sliders-title{
-    font-family: 'Familjen Grotesk',sans-serif;
+
+  &-sliders-title {
+    font-family: 'Familjen Grotesk', sans-serif;
     font-weight: 400;
     font-size: 59px;
     line-height: 115%;
@@ -16,27 +18,31 @@
     color: #202020;
     max-width: 635px;
     margin-left: auto;
-    span{
-      &:nth-child(1){
+
+    span {
+      &:nth-child(1) {
         font-weight: 400;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         display: block;
         font-weight: 700;
       }
     }
   }
-  &-block2{
+
+  &-block2 {
     @apply lg:mt-[150px] mt-10;
-    &-title{
-      font-family: 'Familjen Grotesk',sans-serif;
+    &-title {
+      font-family: 'Familjen Grotesk', sans-serif;
       font-weight: 700;
       font-size: 89px;
       line-height: 100%;
       text-transform: uppercase;
       color: #202020;
     }
-    &-desc{
+
+    &-desc {
       @apply lg:mt-[40px] mt-2;
       max-width: 1050px;
       font-family: 'Wix Madefor Text', sans-serif;
@@ -45,10 +51,12 @@
       line-height: 130%;
       color: #202020;
     }
-    &-btn{
+
+    &-btn {
       padding: 9px 9px 9px 22px;
-      img{
-        font-family: 'Wix Madefor Text',sans-serif;
+
+      img {
+        font-family: 'Wix Madefor Text', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
@@ -61,28 +69,31 @@
       }
     }
   }
-  &-block3{
+
+  &-block3 {
     @apply lg:mt-[135px] mt-10;
-    &-title{
-      font-family: 'Familjen Grotesk',sans-serif;
+    &-title {
+      font-family: 'Familjen Grotesk', sans-serif;
       font-weight: 400;
       font-size: 72px;
       line-height: 112%;
       text-align: center;
       text-transform: uppercase;
       color: #202020;
-      b{
+
+      b {
         font-weight: 700;
         display: block;
 
       }
     }
-    &-color{
+
+    &-color {
       @apply lg:mt-[50px] mt-6;
-      &-last{
+      &-last {
         position: relative;
         @apply lg:mt-0 mt-0;
-        .home-block2-btn{
+        .home-block2-btn {
           position: absolute;
           right: 0;
           bottom: 0;
@@ -90,33 +101,37 @@
       }
     }
 
-    &-desc{
-      @apply  py-4 px-[20px] lg:px-[15px] lg:py-[55px] lg:max-w-[1135px]  w-full;
+    &-desc {
+      @apply py-4 px-[20px] lg:px-[15px] lg:py-[55px] lg:max-w-[1135px]  w-full;
       font-family: 'Wix Madefor Text', sans-serif;
       margin: 0 auto;
       font-weight: 400;
       font-size: 23px;
       line-height: 130%;
       color: #202020;
-      b{
+
+      b {
         font-weight: 700;
       }
-      span{
-       @apply block mb-[14px];
+
+      span {
+        @apply block mb-[14px];
       }
     }
   }
-  &-block4{
+
+  &-block4 {
     @apply lg:mt-[120px] mt-10;
-    &-title{
-      font-family: 'Familjen Grotesk',sans-serif;
+    &-title {
+      font-family: 'Familjen Grotesk', sans-serif;
       font-weight: 400;
       font-size: 89px;
       line-height: 100%;
       text-align: center;
       text-transform: uppercase;
       color: #202020;
-      .font-bold{
+
+      .font-bold {
         font-weight: 700;
         display: block;
       }
@@ -124,58 +139,64 @@
   }
 }
 
-.ru{
-  .home{
-    &-sliders-title{
-      font-family: 'Nunito Sans',sans-serif;
+.ru {
+  .home {
+    &-sliders-title {
+      font-family: 'Nunito Sans', sans-serif;
       font-weight: 400;
       font-size: 51px;
       line-height: 120%;
       max-width: 625px;
 
-      span{
-        &:nth-child(1){
+      span {
+        &:nth-child(1) {
           font-weight: 900;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
           display: unset;
           font-weight: 400;
         }
       }
     }
-    &-block2{
+
+    &-block2 {
       @apply lg:mt-[140px] mt-10;
-      &-title{
-        font-family: 'Nunito Sans',sans-serif;
+      &-title {
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 800;
         font-size: 75px;
         line-height: 110%;
         text-transform: uppercase;
         color: #202020;
       }
-      &-desc{
+
+      &-desc {
         @apply lg:mt-[60px] mt-2;
-        font-family: 'Wix Madefor Text',sans-serif;
+        font-family: 'Wix Madefor Text', sans-serif;
         font-weight: 400;
         font-size: 23px;
         line-height: 130%;
         color: #202020;
       }
-      &-btn{
-        font-family: 'Wix Madefor Text',sans-serif;
+
+      &-btn {
+        font-family: 'Wix Madefor Text', sans-serif;
         padding: 9px 9px 9px 11px;
         margin-bottom: 3px;
-        img{
+
+        img {
           margin-left: 7px;
           width: 29px;
           height: 29px;
         }
       }
     }
-    &-block3{
+
+    &-block3 {
       @apply lg:mt-[140px] mt-10;
-      &-title{
-        font-family: 'Wix Madefor Display',sans-serif;
+      &-title {
+        font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 500;
         font-size: 60px;
         line-height: 112%;
@@ -183,27 +204,101 @@
         text-transform: uppercase;
         color: #202020;
         letter-spacing: 0.3px;
-        b{
+
+        b {
           font-weight: 800;
           display: inline-block;
         }
       }
     }
-    &-block4{
+
+    &-block4 {
       @apply lg:mt-[140px] mt-10;
-      &-title{
+      &-title {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 75px;
         line-height: 110%;
-        .font-bold{
+
+        .font-bold {
           font-weight: 600;
         }
       }
     }
   }
 }
-.wrapper{
+
+.wrapper {
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
+}
+
+.title {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #202020;
+
+  b {
+    font-weight: 700;
+
+  }
+
+  &-big {
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 80px;
+    line-height: 98%;
+    text-transform: uppercase;
+    color: #202020;
+
+    b {
+      font-weight: 700;
+
+    }
+
+  }
+}
+
+.description {
+  font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 130%;
+  color: #202020;
+
+  span {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+}
+
+
+.ru{
+  .title {
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 600;
+    font-size: 49px;
+    line-height: 120%;
+    b {
+      font-weight: 800;
+    }
+
+    &-big {
+      font-family: 'Nunito Sans',sans-serif;
+      font-size: 55px;
+      line-height: 110%;
+
+
+
+      b {
+        font-weight: 800;
+      }
+
+    }
+  }
+
+
 }

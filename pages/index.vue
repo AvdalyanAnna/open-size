@@ -173,66 +173,24 @@ const {locale } = useI18n()
   <div class="default-width mx-auto lg:mt-[80px] mt-6 overflow-hidden px-2 lg:px-0">
     <div class="flex lg:justify-between lg:flex-row flex-col gap-2">
       <div class="lg:w-[49%] flex-col">
-        <h2 class="leading-normal text-lg hidden lg:block lg:text-[59px] lg:leading-[55px]">
-            <span class="font-bold"> Attract and make
-           <br>more customers
-           <br>loyal</span>
-          with the
-          <br>OpenSize mobile
-          <br>platform
+        <h2 v-html="$t('home.block5.title')" class="title lg:mb-[54px] mb-[30px]">
         </h2>
+        <p v-html="$t('home.block5.desc')"  class="description"> </p>
 
-        <h2 class="lg:text-[59px] lg:leading-[55px] leading-normal text-lg lg:hidden">
-          <span class="font-bold"> Attract and make more customers loyal</span>
-          <br/>
-          with the
-          OpenSize mobile platform
-        </h2>
-
-
-        <p class="relative mt-3 text-sm lg:mt-[70px] lg:text-[23px] lg:leading-7">OpenSize e-fitting tends to be
-          comparable
-          (competitive) in accuracy to
-          physical fitting of clothing and shoes in a brick-and-mortar store. In the near future, online shopping for
-          clothes and shoes will become the norm for most buyers.</p>
-        <br>
-        <p class="lg:text-[23px] text-sm lg:leading-7">
-          The option to use the service entirely in the mobile version opens up wide opportunities for the brand to
-          geographically scale the brand, plays a beneficial role in the growth of conversion and consumer loyalty, and
-          significantly increases sales income.
-        </p>
-        <More class="lg:mt-[40px] mt-3"/>
+        <More class="home-block2-btn lg:mt-[50px] mt-3"/>
       </div>
       <img src="/Rectangle%20113.png" class="w-full lg:w-[49%]" alt="">
     </div>
+    <div class="flex justify-between lg:mt-[145px] mt-6 lg:flex-row flex-col gap-2 lg:gap-0">
+      <img src="/Rectangle%20121.png" class="lg:h-[55%] w-full lg:w-[55%] order-2 lg:order-none" alt="">
+      <div class="flex-col lg:w-[45%] lg:pl-[20px] w-full">
+        <h2 v-html="$t('home.block6.title')" class="title-big lg:mb-[40px] mb-[30px]"></h2>
+        <p v-html="$t('home.block6.desc')" class="description lg:w-[93%]"></p>
+        <More class="home-block2-btn lg:mt-[40px] mt-3 lg:ml-auto"/>
+      </div>
+    </div>
+
   </div>
-<!--    <div class="flex justify-between lg:mt-[60px] mt-6 lg:flex-row flex-col gap-2 lg:gap-0">-->
-<!--      <img src="/Rectangle%20121.png" class="lg:h-[55%] w-full lg:w-[55%] order-2 lg:order-none" alt="">-->
-<!--      <div class="flex-col lg:w-[44%] w-full">-->
-<!--        <h2 class="lg:text-[80px] lg:leading-[78px] leading-normal text-lg hidden lg:block">-->
-<!--             <span class="font-bold">Digital twins-->
-<!--      <br>of shoes and-->
-<!--               <br>clothing</span>-->
-<!--        </h2>-->
-
-<!--        <h2 class="lg:text-[80px] lg:leading-[78px] leading-normal text-lg lg:hidden">-->
-<!--          <span class="font-bold">Digital twins of shoes and clothing</span>-->
-<!--        </h2>-->
-
-<!--        <p class="relative lg:mt-[20px] lg:text-[23px] text-sm mt-2 lg:leading-7">To study the digital comfort of brand-->
-<!--          products and-->
-<!--          subsequent reverse-->
-<!--          engineering, OpenSize carries out 3D digital measurements of the internal volumes of samples of manufactured-->
-<!--          clothing and shoes.</p>-->
-<!--        <br>-->
-<!--        <p class="lg:text-[23px] text-sm lg:leading-7">-->
-<!--          High-precision digital twins of the internal topology of clothing and footwear models are measured and created-->
-<!--          in OpenSize industrial certification labs immediately after production. Measurement labs are located in the-->
-<!--          places where shoes and clothing of world brands are produced, which simplifies logistics.-->
-<!--        </p>-->
-<!--        <More class="lg:mt-[40px] mt-3 lg:ml-auto"/>-->
-<!--      </div>-->
-<!--    </div>-->
 <!--    <h2 class="lg:text-center lg:text-[80px] lg:mt-[60px] font-semibold lg:leading-[88px] leading-normal mt-6 text-lg">-->
 <!--      <span class="font-bold">E-Comfort Certificate</span><br>for Clothing and Footwear</h2>-->
 <!--    <div class="lg:mt-[50px] mt-4 flex lg:items-end lg:flex-row flex-col gap-1">-->

@@ -23,6 +23,14 @@ export default {
         },
         block4: {
             title: '<span class="font-bold">OpenSize</span> Product Ecosystem',
+        },
+        block5: {
+            title: '<b>Attract and make more customers loyal </b> with the  OpenSize mobile platform',
+            desc: 'OpenSize e-fitting tends to be comparable (competitive) in accuracy to physical fitting of clothing and shoes in a brick-and-mortar store. In the near future, online shopping for clothes and shoes will become the norm for most buyers. <span></span> The option to use the service entirely in the mobile version opens up wide opportunities for the brand to geographically scale the brand, plays a beneficial role in the growth of conversion and consumer loyalty, and significantly increases sales income.'
+        },
+        block6: {
+            title: '<b>Digital twins of shoes and clothing </b>',
+            desc: 'To study the digital comfort of brand products and subsequent reverse engineering, OpenSize carries out 3D digital measurements of the internal volumes of samples of manufactured clothing and shoes. <span></span> High-precision digital twins of the internal topology of clothing and footwear models are measured and created in OpenSize industrial certification labs immediately after production. Measurement labs are located in the places where shoes and clothing of world brands are produced, which simplifies logistics.'
         }
     },
 
