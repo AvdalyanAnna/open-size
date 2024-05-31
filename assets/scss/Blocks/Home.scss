@@ -257,7 +257,19 @@
       font-weight: 700;
 
     }
+  }
 
+  &-big-2 {
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 90px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #202020;
+
+    b {
+      font-weight: 700;
+
+    }
   }
   &-sub{
     font-family: 'Wix Madefor Text',sans-serif;
@@ -279,7 +291,51 @@
     display: block;
     margin-bottom: 32px;
   }
+  &-2{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    color: #202020;
 
+    span {
+      display: block;
+      margin-bottom: 16px;
+    }
+    &.font-bold{
+      font-weight: 700;
+    }
+  }
+  &-big{
+    font-family: 'Wix Madefor Text',sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 130%;
+    color: #202020;
+  }
+  &-big-40{
+    font-family: 'Wix Madefor Text',sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: #202020;
+    b{
+      font-weight: 700;
+    }
+  }
+  &-big-30{
+    font-family: 'Wix Madefor Text',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    color: #202020;
+    b{
+      font-weight: 700;
+    }
+  }
+  &.bold{
+    font-weight: 500;
+  }
 }
 
 
@@ -297,13 +353,18 @@
       font-family: 'Nunito Sans',sans-serif;
       font-size: 55px;
       line-height: 110%;
-
-
-
       b {
         font-weight: 800;
       }
 
+    }
+    &-big-2 {
+      font-family: 'Nunito Sans',sans-serif;
+      font-size: 72px;
+      line-height: 110%;
+      b {
+        font-weight: 800;
+      }
     }
   }
 
@@ -311,4 +372,8 @@
 }
 .bold-block b{
   display: block;
+}
+
+.text-white{
+  color: #fff !important;
 }

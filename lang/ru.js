@@ -70,5 +70,110 @@ export default{
             }
         }
 
+    },
+    '3d':{
+        block1:{
+            title:'<b>3D сканер внутри мобильного приложения</b>',
+            desc:'Передовое решение OpenSize 3D Scanner mobile app — высокоточный 3Д сканер, реализованный в виде мобильного приложения',
+        },
+        block2:{
+            desc:'Мобильное приложение <b>OpenSize</b> 3D Scanner mobile app позволяет покупателям бренда вне зависимости от его территориального расположения, с помощью собственного телефона сделать трёхмерные сканы своих стоп, тела, необходимые для получения рекомендации и выбора правильной посадки(fit)/ правильного размера.<span></span>Это дает бренду возможность быстро запустить свой сервис электронной примерки без инвестиций в дорогостоящие напольные 3д сканеры. <span></span>Мобильные решения OpenSize увеличат приток новых клиентов, поддержат лояльность благодаря простоте и удобству электронной примерки.',
+        },
+        block3:{
+            title:'Comfort <br> recommendations',
+            desc1:'OpenSize оперирует высокоточными 3х мерными двойниками продукции бренда и покупателей, чтобы давать брендам и покупателям лучшие в своей отрасли рекомендации комфортной посадки.',
+            desc2:'Е-фитинг осуществляют умные алгоритмы AI OpenSize, обеспечивающие подбор правильного размера и дающие оценку потенциального комфорта моделей одежды и обуви.<span></span>Предварительные статистика показывает, что Е-фитинг OpenSize имеет впечатляющий потенциал в росте конверсии и дает возможность снизить возвраты неподходящей обуви при онлайн продаже с 50 до 10%.',
+            desc3:'Е-фитинг OpenSize на базе OpenSize 3D Scanner mobile app, превосходит точность рекомендаций существующих сервисов, которые пытаются сравнивать размерную сетку разных брендов между собой, по принципу — «если у бренда А вы носите 8, то у бренда Б ваш размер будет 8.5»',
+        },
+        block4:{
+            desc:'Мобильные решения <b>OpenSize</b> дают неограниченное масштабирование клиентской базы и мгновенное подключение покупателей к цифровой системе рекомендаций размера обуви и одежды вашего бренда. <b>Уникальная SaaS платформа от OpenSize превращает покупательский трафик в постоянную лояльность бренду.</b>',
+        },
+        block5:{
+            desc1:'Надежность онлайн подбора и удобство онлайн покупок стимулируют привязанность к бренду',
+            desc2:'Такие покупатели образуют постоянную клиентскую базу бренда в виде клуба покупателей',
+            btn:'назад'
+        }
+    },
+    identification:{
+        block1:{
+            title:'<b>Децентрализованная идентификация и цифровая примерка</b>',
+            desc:'Включение цифровых данных в NFT, позволят отслеживать онлайн не только историю каждого продукта от его производства до продажи, но и идентифицировать модели одежды и обуви с позиций комфорта. Каждый покупатель может удаленно определить насколько комфортна ему та или иная модель бренда, при этом безопасно сохраняя свои личные антропометрические данные. '
+        },
+        block2:{
+            title:'<b>Эффективность <br> и практичность инноваций </b>',
+            desc1:'Цифровизация фэшн индустрий изменяет технологии производства и продаж. Цифровые двойники одежды и обуви и высокоточные антропометрические клоны покупателей, сертификаты цифрового комфорта становятся важными структурными элементами Метавселенной.',
+            desc2:'Цифровая примерка стремительно входит в нашу жизнь и постепенно становится обычным явлением. И совсем скоро благодаря технологиям не покупатель будет искать желаемый товар, а товар будет находить своего покупателя',
+            btn:'назад'
+        }
+    },
+    certefication:{
+        block1:{
+            title:'<b>Сертификация <br> цифрового комфорта </b>',
+            desc:'В основе сертификата цифрового комфорта лежит сквозная технология, объединяющая в единый цикл параметризованную и статистически обоснованную оценку комфорта потребителем, корреляцию его цифровых антропометрических данных и цифровых параметров внутренней топологии обуви и одежды с учетом материалов производства'
+        },
+        block2:{
+            desc:'Сертификат цифрового комфорта выпускается на основе подтвержденной статистики совершенных ранее покупок',
+            btn:'назад',
+        }
+    },
+    study:{
+        title:'<b>Изучение <br> цифрового <br> комфорта <br> и реверс <br> инжиниринг</b>',
+        desc1:'Запатентованная промышленная технология создания цифровых двойников внутренних объемов одежды и обуви основана на прямых 3D измерениях в статическом и динамическом режиме, учитывающим все деформации и растяжения материалов',
+        desc2:'Располагая параметрами этих цифровых измерений, бренд получает возможность осуществлять реверс инжиниринг изделий для оптимизации своего производства, создания более комфортной продукции и последующему переходу на таргетированное производство',
+        btn:'назад'
+    },
+    carbon:{
+        block1:{
+            title:'<b>Сокращать углеродный след и снижать затраты</b>',
+            desc:'На индустрию моды приходится около 10% Глобальных выбросов углерода. В 2022 году это 5,8 миллиардов тонн. Значительную часть выбросов CO2  составляют выбросы от перепроизводства одежды и обуви, а также от возвратов при онлайн торговле',
+        },
+        block2:{
+            desc:'<b>Более 200 млн. тонн CO2  выбросов от перепроизводства</b>, последующей утилизации и возвратов некомфортной одежды и обуви ежегодно',
+            slider:[
+                {
+                    text:'Только производство одной пары кроссовок эквивалентно выбросу 13,6 кг CO2 .Ежегодно в мире перепроизводится более 5 миллиардов пар обуви. Это дает углеродный след более чем 60 миллионов тонн ежегодно.'
+                },
+                {
+                    text:'Выбросы CO2  от перепроизводства и возвратов одежды выше в несколько раз и составляют порядка 200 мл тон.+ Последующая утилизация создает соизмеримый углеродный след'
+                }
+            ]
+        },
+        block3:{
+            title:'<b>1,9 млрд. возвратов</b> плохо подходящей обуви ежегодно',
+            desc:'Потребители во всем мире покупают от 14,5 до 19 миллиардов пар в год. Онлайн торговля составляет до 20% от обувного рынка. Известно, что онлайн торговля обуви дает 40-50 % возвратов неподошедшей обуви, что составляет не менее 1,9 млрд. пар <span></span> Каждая возвращенная пара обуви это выброс 850 г CO2. В итоге, возвраты ежегодно дают выброс CO2 не менее 2 миллионов тонн. <span></span>',
+        },
+        block4:{
+            desc:'Цифровые технологии Open Size открывают новые возможности для брендов минимизировать негативное воздействие на окружающую среду, и повысить эффективность производства моды.',
+            btn:'назад'
+        },
+    },
+    digitalization:{
+        block1:{
+            title:'',
+            desc:'<b>OpenSize</b> innovations have made it possible to perform highly accurate 3D measurements of the internal volumes of clothing and shoes in a dynamic mode, taking into account the complex deformation of materials and to create e-twins of clothing and shoes E-fitting from OpenSize is a virtual simulation of a physical fitting using digital anthropometric data of the buyer (e-twin of the buyer). <span></span> <b>OpenSize</b> smart algorithms (AI) determine the rate of consistency of the e- twin of the buyer’s body and the e-twin of clothes and shoes to select the best fitting models. <span></span> <b>OpenSize</b> has implemented the digitalization of user sensations of comfort in clothing and shoes in the form of parameterized three-dimensional data.',
+        },
+        block2:{
+            desc:'OpenSize e-fitting enhances brands to confidently recommend not only the correct size, but also evaluate the rate of comfort of clothing and shoes for future online purchases. <span></span> This ensures higher conversion, significantly increases sales in online stores and provides constant loyalty to the brand.',
+        },
+        block3:{
+            title:'<b>Reverse engineering</b>',
+            desc1:'<b>OpenSize</b> digital data opens up new opportunities for brands to reverse engineer and optimize the production of current apparel patterns and shoe lasts based on the most up-to-date data on purchases of comfortable and uncomfortable models in different markets.',
+            desc2:'Based on such analytics, the brand can create new models, taking into account the anthropometric particularities of buyers in different geographic markets.<span></span> And also to create new models for special segments of consumers, potentially interesting from a business point of view, who liked the style and quality of the brand’s products, but the models were not matching in terms of comfort',
+        },
+        block4:{
+            desc1:'Data on the parameters of e-twins of uncomfortable shoe models present in local markets makes it possible to reengineer shoe lasts to create comfortable models',
+        },
+        block5:{
+            desc1:'Converting e-twins of shoe internal volumes into shoe lasts provides an easy and seamless interface between OpenSize\'s innovative methods and traditional shoe last design.',
+            desc2:'OpenSize data for reverse engineering enhances brands to create comfortable models with <b>cutting-edge designs using new materials</b>',
+        },
+        block6:{
+            title:'Know-Your-Customer <b>Targeted mass production</b>',
+            desc1:'Partnering with OpenSize gives brands hands-on assistance when creating production order structure. Based on statistics of anatomical consistency of product models and consumers for each sales channel or geographical market the brand has the ability to fine-tune the overall production order.',
+            desc2:'By accurately knowing the comfort profile of its potential customer, the brand increases the return on investment for the planned production order and reduces the overproduction of potentially unsalable models.',
+            btn:'BACK',
+        }
     }
+
+
 }

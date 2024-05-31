@@ -1,31 +1,21 @@
 <template>
   <Header/>
-  <div class="px-[17%]">
-    <div class="flex">
+  <div class="wrapper">
+    <div class="flex lg:mt-[100px] mt-[40px]">
       <div class="relative z-10">
-        <h2 class="text-[89px]  font-bold leading-[90px] relative">Study of E-comfort
-          <br>and
-          <br>reverse
-          <br>engineering</h2>
-        <div class="flex mt-[80px] relative">
+        <h2 v-html="$t('study.title')" class="title-big  relative">
+        </h2>
+        <div class="flex items-center mt-[80px] relative">
           <img src="/Rectangle%20173%20(1).png" class="mr-[20px]" alt="">
-          <h2 class="text-[23px]">
-            Patented industrial technology for creating
-            <br>digital twins of the internal volumes of
-            <br>clothing and shoes is based on direct 3D
-            <br>measurements in static and dynamic modes,
-            <br>taking into account all deformations and
-            <br>stretches of materials
-
-          </h2>
+          <p v-html="$t('study.desc1')" class="description max-w-[495px]">
+          </p>
         </div>
-        <div class="px-[60px] py-[30px] text-[23px] bg-[#CBE54E] w-[800px] mt-[50px]">
-          Having the parameters of these digital measurements, the brand is able to reverse engineer products to optimize its production order, create more comfortable products and subsequently switch to targeted production
-        </div>
+        <div v-html="$t('study.desc2')" class="px-[60px] py-[30px] description bg-[#CBE54E] w-[800px] mt-[50px]"></div>
       </div>
       <div class="w-[1000px] mt-[120px] relative">
         <img src="/bell.png" class="max-w-[none] w-[800px] relative left-[-200px]"  alt="">
-        <button class="flex items-center mt-[50px] bg-[#CBE54E] h-[46px] px-[70px]  absolute bottom-[100px] right-[250px]"><img src="/Arr.svg" class="mr-[20px]" alt=""> BACK</button>
+        <button class="flex items-center mt-[50px] bg-[#CBE54E] h-[46px] px-[70px]  absolute bottom-[100px] right-[250px]"><img src="/Arr.svg" class="mr-[20px]" alt="">
+          {{ $t('study.btn') }}</button>
 
       </div>
 
