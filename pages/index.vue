@@ -19,6 +19,7 @@ import Green from "~/components/UI/Green.vue";
 import VideoPlayer from "~/components/Video.vue";
 import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
 import VHomeForm from "~/components/Blocks/Home/vHomeForm.vue";
+import VSliderBig from "~/components/Sliders/vSliderBig.vue";
 
 const {locale} = useI18n()
 
@@ -73,6 +74,7 @@ const {locale} = useI18n()
     </Swiper>
   </div>
 
+
   <div class="home-block2 mx-auto  px-2 lg:px-0">
     <div class="wrapper">
       <h2 class="home-block2-title text-lg font-bold leading-normal lg:leading-[70px] lg:text-[89px]">
@@ -113,62 +115,15 @@ const {locale} = useI18n()
   </div>
 
 
-  <div class="mx-auto lg:mt-[50px] mt-6 swp relative overflow-hidden">
-    <button class="arrow-left arrow">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right"
-           viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-      </svg>
-    </button>
-    <button class="arrow-right arrow">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right"
-           viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-      </svg>
-    </button>
-    <Swiper
-        class="mx-auto w-full"
-        :modules="[EffectCoverflow, Navigation, Pagination]"
-        :effect="'coverflow'"
-        :slides-per-view="3"
-        :space-between="55"
-        :centered-slides="true"
-        :coverflow-effect="{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }"
-        :navigation="{
-          enabled:true,
-           nextEl: '.arrow-left',
-           prevEl: '.arrow-right'
-        }"
-        initial-slide="1"
-        :pagination="true"
-        :slide-active-class="'swiper-slide-active'"
-
-    >
-      <SwiperSlide>
-        <img src="/ecosystem/SD1.png" class="swiper-slide" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/ecosystem/SD2.png" class="swiper-slide" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/ecosystem/SD3.png" class="swiper-slide" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/ecosystem/SD4.png" class="swiper-slide" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/ecosystem/SD5.png" class="swiper-slide" alt="">
-      </SwiperSlide>
-    </Swiper>
+  <div class="my-[100px] lg:mt-[50px]">
+    <v-slider-big :slider="[
+       '/ecosystem/SD1.png','/ecosystem/SD2.png','/ecosystem/SD3.png',
+       '/ecosystem/SD4.png','/ecosystem/SD5.png','/ecosystem/SD1.png',
+       '/ecosystem/SD2.png','/ecosystem/SD3.png','/ecosystem/SD4.png',
+       '/ecosystem/SD5.png'
+   ]"/>
   </div>
+
 
   <div class="wrapper mx-auto lg:mt-[80px] mt-6 overflow-hidden px-2 lg:px-0">
     <div class="flex lg:justify-between lg:flex-row flex-col gap-2">
@@ -248,11 +203,11 @@ const {locale} = useI18n()
       <div class="flex justify-between items-center lg:mt-[60px] mt-4 flex-col gap-2 md:flex-row md:gap-0">
         <div class="flex items-center w-full">
           <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">
-          <span class="description">{{$t('home.block9.desc1')}}</span>
+          <span class="description">{{ $t('home.block9.desc1') }}</span>
         </div>
         <div class="flex items-center w-full">
           <img src="/Rectangle%20135%20(1).png" class="mr-[10px]" alt="">
-          <span class="description">{{ $t('home.block9.desc2')}}</span>
+          <span class="description">{{ $t('home.block9.desc2') }}</span>
         </div>
       </div>
       <div class="flex lg:items-end mt-[60px] flex-col lg:flex-row items-center">
@@ -260,16 +215,15 @@ const {locale} = useI18n()
         <More class="ml-auto lg:mt-0 lg:ml-4"/>
       </div>
     </div>
-    <v-home-form />
+    <v-home-form/>
   </div>
 
 
-
   <!--  </div>-->
-    <div class="overflow-hidden w-full px-2 lg:px-0">
-      <Last/>
-    </div>
-    <Footer/>
+  <div class="overflow-hidden w-full px-2 lg:px-0">
+    <Last/>
+  </div>
+  <Footer/>
 </template>
 
 <style>
@@ -286,14 +240,7 @@ img {
   width: 100%;
 }
 
-.swiper {
-  margin-right: 0;
-}
 
-.swiper-pagination-bullet-active {
-  background-color: #CBE54E;
-  transform: scale(1);
-}
 
 .swp > div {
   overflow: hidden;

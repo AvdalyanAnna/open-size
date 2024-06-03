@@ -16,9 +16,9 @@
     </div>
 
     <h2 v-html="$t('3d.block3.title')" class="title-big  mt-[40px]">
-     </h2>
+    </h2>
     <p v-html="$t('3d.block3.desc1')" class="description mt-[20px] lg:max-w-[45%]">
-     </p>
+    </p>
 
   </div>
   <div class="flex items-center justify-between  px-[15%] mt-[40px] h-[500px]" style="background-image: url(/bg1.png)">
@@ -31,37 +31,13 @@
     <p v-html="$t('3d.block3.desc3')" class="lg:max-w-[46.3%] mt-[40px] description">
     </p>
   </div>
-
-  <Swiper
-      class="mx-auto w-full mt-[180px]"
-      :modules="[SwiperAutoplay]"
-      :slides-per-view="3"
-      :space-between="55"
-      :centered-slides="true"
-      :pagination="true"
-      :loop="true"
-      :thumbs="true"
-      :centered-slides-bounds="true"
-      :center-insufficient-slides="true"
-      :additional-slide="1"
-  >
-    <SwiperSlide>
-      <img src="/sld%20(1).png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sld%20(2).png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sld%20(3).png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sld%20(4).png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sld%20(5).png" alt="">
-    </SwiperSlide>
-
-  </Swiper>
+  <div class="mt-[200px] mb-[100px]">
+    <v-slider-big :slider=" [
+      '/sld1.png', '/sld2.png', '/sld3.png',
+      '/sld4.png', '/sld5.png','/sld1.png',
+      '/sld2.png', '/sld3.png','/sld4.png', '/sld5.png',
+    ]"/>
+  </div>
   <div class="flex items-center mt-[140px]">
     <div>
       <img src="/Rectangle%20174.png" alt="">
@@ -72,24 +48,23 @@
 
     </div>
     <div class="mx-[40px]">
-      <h2 v-html="$t('3d.block4.desc')" class="description-big-40 lg:max-w-[645px]">
-
-      </h2>
+      <h2 v-html="$t('3d.block4.desc')" class="description-big-40 lg:max-w-[645px]"></h2>
     </div>
   </div>
-<!--  <div class="px-[16%]">-->
+  <!--  <div class="px-[16%]">-->
 
-<!--    <img src="/lastImg.png" class="mt-[80px]" alt="">-->
-<!--    <button class="flex items-center mt-[-46px] bg-[#CBE54E] h-[46px] px-[70px]  absolute"><img src="/Arr.svg"-->
-<!--                                                                                                alt=""> BACK-->
-<!--    </button>-->
+  <!--    <img src="/lastImg.png" class="mt-[80px]" alt="">-->
+  <!--    <button class="flex items-center mt-[-46px] bg-[#CBE54E] h-[46px] px-[70px]  absolute"><img src="/Arr.svg"-->
+  <!--                                                                                                alt=""> BACK-->
+  <!--    </button>-->
 
-<!--  </div>-->
+  <!--  </div>-->
   <Footer/>
 </template>
 <script setup lang="ts">
 import Header from "~/components/UI/Header.vue";
 import Footer from "~/components/UI/Footer.vue";
+import VSliderBig from "~/components/Sliders/vSliderBig.vue";
 </script>
 <style scoped>
 .swiper-slide {
