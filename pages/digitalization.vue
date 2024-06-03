@@ -17,71 +17,20 @@
     <p v-html="$t('digitalization.block3.desc1')" class="description mr-[40px] max-w-[638px]"></p>
     <img src="/react100.png" class="h-[69px]" alt="">
   </div>
-  <Swiper
-      class="mx-auto w-full"
-      :modules="[SwiperAutoplay]"
-      :slides-per-view="3"
-      :space-between="55"
-      :centered-slides="true"
-      :pagination="true"
-      :loop="true"
-      :thumbs="true"
-      :centered-slides-bounds="true"
-      :center-insufficient-slides="true"
-      :additional-slide="1"
-  >
-    <SwiperSlide>
-      <img src="/sl1.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl2.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl3.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl4.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl5.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl6.png" alt="">
-    </SwiperSlide>
-  </Swiper>
+  <div class="my-[100px]">
+    <v-slider-big />
+  </div>
   <div class="flex items-center mt-[40px]">
     <img src="/react101.png" class="h-[83px]" alt="">
     <p v-html="$t('digitalization.block3.desc2')" class="description ml-[20px] max-w-[748px]"></p>
   </div>
-  <Swiper
-      class="mx-auto w-full"
-      :modules="[SwiperAutoplay]"
-      :slides-per-view="3"
-      :space-between="55"
-      :centered-slides="true"
-      :pagination="true"
-      :loop="true"
-      :thumbs="true"
-      :centered-slides-bounds="true"
-      :center-insufficient-slides="true"
-      :additional-slide="1"
-  >
-    <SwiperSlide>
-      <img src="/sl22.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl23.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl24.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl25.png" alt="">
-    </SwiperSlide>
-    <SwiperSlide>
-      <img src="/sl26.png" alt="">
-    </SwiperSlide>
-  </Swiper>
+  <div class="my-[100px]">
+    <v-slider-big :slider=" [
+      '/sl22.png', '/sl23.png', '/sl24.png',
+      '/sl25.png', '/sl22.png', '/sl23.png',
+      '/sl24.png', '/sl25.png'
+    ]" />
+  </div>
   <div class="wrapper">
     <p v-html="$t('digitalization.block4.desc1')" class="text-center description-26 max-w-[840px] my-[80px] mx-auto"></p>
   </div>
@@ -127,21 +76,32 @@
 
   <Footer/>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .swiper-slide {
-  width: 80%;
-  transform: scale(0.9);
-  transition: 0.4s;
-}
+  img{
+    //transform: scale(0.8);
+  }
+  &.swiper-slide-active{
+    img{
 
-.swiper-slide-active {
-  width: 115%;
-  transform: scale(1.15);
-  transition: 0.4s;
-  height: 115%;
+    }
+  }
 }
+/*.swiper-slide {*/
+/*  width: 80%;*/
+/*  transform: scale(0.9);*/
+/*  transition: 0.4s;*/
+/*}*/
+
+/*.swiper-slide-active {*/
+/*  width: 115%;*/
+/*  transform: scale(1.15);*/
+/*  transition: 0.4s;*/
+/*  height: 115%;
+//} */
 </style>
 <script setup lang="ts">
 import Header from "~/components/UI/Header.vue";
 import Footer from "~/components/UI/Footer.vue";
+import VSliderBig from "~/components/Sliders/vSliderBig.vue";
 </script>
