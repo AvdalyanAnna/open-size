@@ -46,11 +46,7 @@ if (locale.value === 'ru' && !hasCode) {
 } else {
   emit('update', true)
 }
-useHead({
-  bodyAttrs: {
-    class: `h-full`
-  }
-})
+
 const form = reactive({
   login: '',
   password: '',
