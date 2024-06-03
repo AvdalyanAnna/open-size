@@ -149,28 +149,28 @@ export default {
     digitalization:{
         block1:{
             title:'',
-            desc:'Инновации <b>OpenSize</b> сделали возможным производить высокоточные 3Д измерения внутренних объемов одежды и обуви в динамическом режиме с учетом комплексной деформации материалов и создавать цифровых двойников одежды и обуви. <span></span> E-примерка от <b>OpenSize</b> - виртуальная симуляцию физической примерки по цифровым антропометрическим данным покупателя (электронному двойнику покупателя).<span></span> Интеллектуальные алгоритмы (ИИ) OpenSize определяют степень соответствия электронного двойника тела покупателя и электронного двойника одежды и обуви для выбора наиболее подходящих моделей.<span></span> <b>OpenSize</b> реализовал перевод в цифровой формат пользовательских ощущений комфорта одежды и обуви в виде параметризованных трёхмерных данных.',
+            desc:'<b>OpenSize</b> innovations have made it possible to perform highly accurate 3D measurements of the internal volumes of clothing and shoes in a dynamic mode, taking into account the complex deformation of materials and to create e-twins of clothing and shoes E-fitting from OpenSize is a virtual simulation of a physical fitting using digital anthropometric data of the buyer (e-twin of the buyer). <span></span> <b>OpenSize</b> smart algorithms (AI) determine the rate of consistency of the e- twin of the buyer’s body and the e-twin of clothes and shoes to select the best fitting models. <span></span> <b>OpenSize</b> has implemented the digitalization of user sensations of comfort in clothing and shoes in the form of parameterized three-dimensional data.',
         },
         block2:{
-            desc:'Е-примерка <b>OpenSize</b> позволяет брендам уверенно рекомендовать не только правильный размер, но и оценивать уровень комфорта одежды и обуви для будущих онлайн-покупок. <br> Это обеспечивает более высокую конверсию, существенно повышает продажи в онлайн магазинах и дает постоянную лояльность бренду.',
+            desc:'OpenSize e-fitting enhances brands to confidently recommend not only the correct size, but also evaluate the rate of comfort of clothing and shoes for future online purchases. <span></span> This ensures higher conversion, significantly increases sales in online stores and provides constant loyalty to the brand.',
         },
         block3:{
-            title:'Реверс инжиниринг',
-            desc1:'Цифровые данные OpenSize открывают перед брендами новые возможности для обратного проектирования и оптимизации производства текущих лекал одежды и обувных колодок на основе самых актуальных данных о покупках комфортных или некомфортных моделей на рынках разных регионов.',
-            desc2:'На основе такой аналитики бренд может создавать новые модели, учитывая антропометрические особенности покупателей разных географических рынков.А также создавать новые модели для особенных сегментов потребителей потенциально интересных с точки зрения бизнеса, которым нравился стиль и качество изделий бренда, но модели не подходили в плане комфорта.',
+            title:'<b>Reverse engineering</b>',
+            desc1:'<b>OpenSize</b> digital data opens up new opportunities for brands to reverse engineer and optimize the production of current apparel patterns and shoe lasts based on the most up-to-date data on purchases of comfortable and uncomfortable models in different markets.',
+            desc2:'Based on such analytics, the brand can create new models, taking into account the anthropometric particularities of buyers in different geographic markets.<span></span> And also to create new models for special segments of consumers, potentially interesting from a business point of view, who liked the style and quality of the brand’s products, but the models were not matching in terms of comfort',
         },
         block4:{
-            desc1:'Данные о параметрах цифровых двойников некомфортных моделей обуви, присутствующих на локальных рынках позволяют проводить реинжиниринг обувных колодок для создания комфортных моделей.',
+            desc1:'Data on the parameters of e-twins of uncomfortable shoe models present in local markets makes it possible to reengineer shoe lasts to create comfortable models',
         },
         block5:{
-            desc1:'Конвертация цифровых двойников внутренних объемов обуви в обувные колодки дает легкий и бесшовный стык инновационных методов OpenSize и традиционного проектирования обувных колодок.',
-            desc2:'Данные OpenSize для обратного проектирования помогают брендам создавать удобные модели с <b>ультрасовременным дизайном с использованием новых материалов</b>',
+            desc1:'Converting e-twins of shoe internal volumes into shoe lasts provides an easy and seamless interface between OpenSize\'s innovative methods and traditional shoe last design.',
+            desc2:'OpenSize data for reverse engineering enhances brands to create comfortable models with <b>cutting-edge designs using new materials</b>',
         },
         block6:{
-            title:'Знай своего клиента <br><b> Таргетированное массовое производство</b>',
-            desc1:'Партнерство с OpenSize дает брендам практическую помощь при создании структуры производственных заказов. На основе статистики анатомической совместимости моделей продукции и потребителей для каждого канала продаж или географического рынка бренд имеет возможность точно настроить общий производственный заказ.',
-            desc2:'Точно зная профиль комфорта своего потенциального покупателя, бренд увеличивает окупаемость для планируемого производственного заказа и снижает перепроизводство потенциально нереализуемой продукции',
-            btn:'назад',
+            title:'Know-Your-Customer <b>Targeted mass production</b>',
+            desc1:'Partnering with OpenSize gives brands hands-on assistance when creating production order structure. Based on statistics of anatomical consistency of product models and consumers for each sales channel or geographical market the brand has the ability to fine-tune the overall production order.',
+            desc2:'By accurately knowing the comfort profile of its potential customer, the brand increases the return on investment for the planned production order and reduces the overproduction of potentially unsalable models.',
+            btn:'BACK',
         }
     }
 

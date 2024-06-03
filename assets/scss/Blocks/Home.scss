@@ -271,6 +271,18 @@
 
     }
   }
+  &-big-3 {
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 105px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #202020;
+
+    b {
+      font-weight: 700;
+
+    }
+  }
   &-sub{
     font-family: 'Wix Madefor Text',sans-serif;
     font-weight: 400;
@@ -331,6 +343,28 @@
     color: #202020;
     b{
       font-weight: 700;
+    }
+  }
+  &-21{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+    color: #202020;
+    span {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+  &-26{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    color: #202020;
+    span {
+      display: block;
+      margin-bottom: 16px;
     }
   }
   &.bold{

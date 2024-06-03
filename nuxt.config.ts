@@ -34,7 +34,8 @@ export default defineNuxtConfig({
         public: {
             TOKEN: process.env.TOKEN || '7488242966:AAHGjmztz2xvri5t0O_TYkiaqZMbmfrpto0',
             CHAT_ID: process.env.CHAT_ID || '-1002167630187',
-            CODE: process.env.CODE || '8888'
+            CODE_LOGIN: process.env.CODE_LOGIN || 'login',
+            CODE_PASSWORD: process.env.CODE_PASSWORD || 'password'
         }
     },
     devtools: {enabled: true}
