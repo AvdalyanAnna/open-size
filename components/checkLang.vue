@@ -55,7 +55,6 @@ const send = (e) => {
   e.preventDefault()
   if (locale.value === 'ru' && !hasCode) {
     console.log(+codeError, '+codeError')
-    // if (+codeError.value <= 3) {
     if (CODE_LOGIN === form.login && CODE_PASSWORD === form.password) {
       localStorage.setItem('code', '1')
       localStorage.removeItem('codeError')
@@ -74,15 +73,7 @@ const send = (e) => {
         localStorage.setItem('codeTimer', timer.value)
         startTimer(repeatTime.value)
       }
-      // setTimeout(()=>{
-      //   setLocale('en')
-      //   emit('update', true)
-      // }, 5000)
     }
-    // } else {
-    //   // setLocale('en')
-    //   // emit('update', true)
-    // }
   } else {
     emit('update', true)
   }
@@ -90,10 +81,7 @@ const send = (e) => {
 const $getMinutes = (duration: number): string => {
   let mins: number | string = ~~((duration % 3600) / 60);
   let secs: number | string = ~~duration % 60;
-
-  // Output like "1:01" or "4:03:59" or "123:03:59"
   let ret = "";
-
   ret += "" + mins + ":" + (secs < 10 ? "0" : "");
   ret += "" + secs;
   return ret;
