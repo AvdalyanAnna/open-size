@@ -116,7 +116,7 @@ export default {
         }
     },
     study:{
-        title:'<b>Study of E-comfort <br> and<br>reverse<br>engineering</b>',
+        title:'<b>Study of E-comfort <br> and <br> reverse <br> engineering</b>',
         desc1:'Patented industrial technology for creating digital twins of the internal volumes of clothing and shoes is based on direct 3D measurements in static and dynamic modes, taking into account all deformations and stretches of materials\n',
         desc2:'Having the parameters of these digital measurements, the brand is able to reverse engineer products to optimize its production order, create more comfortable products and subsequently switch to targeted production',
         btn:'BACK'

@@ -1,0 +1,114 @@
+.study {
+  &-inner {
+    @apply flex lg:mt-[100px] mt-[80px];
+    @media screen and (max-width: 1800px) {
+      margin-bottom: 100px;
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &-left {
+    @apply relative z-10;
+    @media screen and (max-width: 1200px) {
+      img {
+        height: 150px;
+      }
+      .title-big {
+        font-size: 65px;
+      }
+      .description {
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      img {
+        height: 120px;
+      }
+      .title-big {
+        font-size: 55px;
+        br{
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+
+      .title-big {
+        font-size: 45px;
+        br{
+          display: none;
+        }
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-right {
+    @apply w-[60vw] mt-[120px] relative;
+    @media screen and (max-width: 1800px) {
+      position: absolute;
+      right: 0;
+    }
+    @media screen and (max-width: 1279px) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 900px) {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      display: contents;
+    }
+
+    &__img {
+      @apply max-w-[800px]  relative left-[-200px];
+      @media screen and (max-width: 1800px) {
+        left: 0;
+        max-width: 700px;
+      }
+      @media screen and (max-width: 1279px) {
+        max-width: 500px;
+      }
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        max-height: 500px;
+        margin: 20px auto;
+        //order: 7;
+
+      }
+      @media screen and (max-width: 640px) {
+        max-width: 100%;
+        max-height: 300px;
+        margin: 20px auto;
+        //order: 7;
+
+      }
+    }
+
+    &__btn {
+      @apply flex items-center bg-[#CBE54E] h-[46px] lg:px-[70px] px-[30px]  absolute bottom-[100px] right-[250px];
+      @media screen and (max-width: 1400px) {
+        right: 100px;
+      }
+      @media screen and (max-width: 1279px) {
+        right: 10px;
+        bottom: -100px;
+      }
+      @media screen and (max-width: 900px) {
+        position: unset;
+        width: fit-content;
+        order: 4;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 14px;
+        img{
+          height: 40px;
+        }
+      }
+    }
+  }
+}

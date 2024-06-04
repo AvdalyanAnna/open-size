@@ -1,6 +1,6 @@
 <template>
   <header class="header  drop-shadow-md bg-white">
-    <div class="header-inner  ">
+    <div class="header-inner px-[10px] ">
       <div class="w-full  flex items-center   z-10">
         <img src="/logo.png" alt="Logo" width="84" height="56" class="w-[40px] lg:w-[84px]">
         <div class="flex items-center gap-3 ml-auto">
