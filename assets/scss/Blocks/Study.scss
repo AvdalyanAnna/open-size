@@ -4,7 +4,7 @@
     @media screen and (max-width: 1800px) {
       margin-bottom: 100px;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1023px) {
       flex-direction: column;
     }
 
@@ -23,7 +23,7 @@
         font-size: 20px;
       }
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1023px) {
       img {
         height: 120px;
       }
@@ -62,7 +62,7 @@
     @media screen and (max-width: 1279px) {
       max-width: 500px;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1023px) {
       position: unset;
       max-width: 100%;
       width: 100%;
@@ -78,7 +78,7 @@
       @media screen and (max-width: 1279px) {
         max-width: 500px;
       }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1023px) {
         max-width: 100%;
         max-height: 500px;
         margin: 20px auto;
@@ -99,7 +99,7 @@
         right: 10px;
         bottom: -100px;
       }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1023px) {
         position: unset;
         width: fit-content;
         order: 4;

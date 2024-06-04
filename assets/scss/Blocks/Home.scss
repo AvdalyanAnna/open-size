@@ -402,8 +402,6 @@
       }
     }
   }
-
-
 }
 .bold-block b{
   display: block;
@@ -417,6 +415,16 @@
   .title-big {
     font-size: 65px;
   }
+  .ru{
+    .title {
+      &-big {
+        font-size: 50px;
+      }
+      &-big-2 {
+        font-size: 60px;
+      }
+    }
+  }
   .description {
     font-size: 20px;
   }
@@ -425,6 +433,16 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .ru{
+    .title {
+      &-big {
+        font-size: 45px;
+      }
+      &-big-2 {
+        font-size: 50px;
+      }
+    }
+  }
   .title-big {
     font-size: 55px;
     br{
@@ -434,6 +452,16 @@
 
 }
 @media screen and (max-width: 640px) {
+  .ru{
+    .title {
+      &-big {
+        font-size: 35px;
+      }
+      &-big-2 {
+        font-size: 40px;
+      }
+    }
+  }
   .title-big {
     font-size: 45px;
     br{

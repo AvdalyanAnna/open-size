@@ -38,7 +38,7 @@
     </div>
     <div class="identification-block2">
       <div class="wrapper">
-        <h2 v-html="$t('identification.block2.title')" class="text-center lg:mt-[90px] mt-[20px] title-big lg:mb-[60px] mb-[30px]">
+        <h2 v-html="$t('identification.block2.title')" class="text-center lg:mt-[90px] mt-[30px] title-big lg:mb-[60px] mb-[20px]">
         </h2>
         <div class="identification-block2__inner ">
 

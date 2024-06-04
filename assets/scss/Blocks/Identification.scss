@@ -152,7 +152,7 @@
 
     .description {
       @media screen and (max-width: 1023px) {
-        margin: 20px 0;
+        margin: 0 0 20px;
         max-width: 90%;
       }
     }
@@ -207,4 +207,26 @@
   height: auto;
   background: linear-gradient(180deg, #CBE54E 0%, #5BA8A0 100%);
 
+}
+.ru{
+  .identification-block2 .title-big ,
+  .identification-block1__left .title-big {
+    @media screen and (max-width: 1023px) {
+      font-size: 47px;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 35px;
+    }
+
+  }
+  .identification-block1__left .title-big {
+    @media screen and (max-width: 480px) {
+      font-size: 26px;
+    }
+  }
+
+
+  //.identification-block1__left .title-big {
+  //  font-size: 47px;
+  //}
 }
