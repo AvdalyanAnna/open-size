@@ -1,0 +1,210 @@
+.identification {
+  &-block1 {
+    @apply flex lg:mt-[100px] mt-[80px];
+    min-height: 700px;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 640px) {
+      min-height: auto;
+    }
+
+    &__left {
+      position: relative;
+      z-index: 9;
+
+      &-img {
+      }
+
+      @media screen and (max-width: 1200px) {
+        .title-big {
+          font-size: 65px;
+        }
+        .description {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+
+        .title-big {
+          font-size: 55px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .title-big {
+          font-size: 45px;
+        }
+        .description {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        .title-big {
+          font-size: 40px;
+        }
+      }
+
+    }
+
+    &__right {
+      @apply w-[60vw] mt-[120px] relative;
+      @media screen and (max-width: 1800px) {
+        position: absolute;
+        right: 0;
+      }
+      @media screen and (max-width: 1279px) {
+        max-width: 500px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        position: unset;
+        max-width: 100%;
+        width: 100%;
+        display: contents;
+      }
+    }
+
+    &__img {
+      @apply max-w-[800px]  relative left-[-120px];
+      @media screen and (max-width: 1800px) {
+        left: 0;
+        max-width: 700px;
+      }
+      @media screen and (max-width: 1279px) {
+        max-width: 500px;
+      }
+      @media screen and (max-width: 1023px) {
+        max-width: 100%;
+        max-height: 500px;
+        margin: 20px auto;
+      }
+      @media screen and (max-width: 640px) {
+        max-width: 100%;
+        max-height: 300px;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  &-block2 {
+    @media screen and (max-width: 1200px) {
+      .title-big {
+        font-size: 65px;
+      }
+      .description {
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width: 1023px) {
+      .title-big {
+        font-size: 55px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      .title-big {
+        font-size: 40px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    &__inner {
+      @apply flex items-center;
+      @media screen and (max-width: 1023px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+      }
+    }
+
+    &__left {
+      @media screen and (max-width: 1023px) {
+        max-width: 900px;
+      }
+    }
+
+    &__right {
+      &-img {
+        @media screen and (max-width: 1300px) {
+          max-width: 600px;
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    .description {
+      @media screen and (max-width: 1023px) {
+        margin: 20px 0;
+        max-width: 90%;
+      }
+    }
+
+    &__green {
+      @media screen and (max-width: 1023px) {
+        max-width: 100% !important;
+      }
+    }
+
+
+  }
+
+  &-images {
+    margin: 20px 0;
+    @media screen and (max-width: 640px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      max-width: calc(32% - 20px);
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 640px) {
+        min-width: 360px;
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: 480px) {
+        min-width: 320px;
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: 350px) {
+        min-width: 280px;
+        margin-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      overflow-x: auto;
+    }
+  }
+}
+
+.gradient-color {
+  min-width: 15px;
+  height: auto;
+  background: linear-gradient(180deg, #CBE54E 0%, #5BA8A0 100%);
+
+}

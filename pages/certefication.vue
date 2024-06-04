@@ -1,6 +1,8 @@
 <template>
   <Header/>
-  <h2 v-html="$t('certefication.block1.title')" class="lg:mt-[100px] mt-[40px] lg:mb-[52px] mb-[20px] title-big text-center"></h2>
+  <div class="wrapper">
+    <h2 v-html="$t('certefication.block1.title')" class="lg:mt-[100px] mt-[40px] lg:mb-[52px] mb-[20px] title-big text-center"></h2>
+  </div>
   <div class="wrapper">
     <img src="/zaratros.png" alt="">
     <div class="lg:max-w-[985px] flex items-center ml-auto w-fit mt-[40px]">
