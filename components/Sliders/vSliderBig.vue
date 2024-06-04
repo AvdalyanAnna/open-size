@@ -1,5 +1,5 @@
 <script setup>
-import {Pagination} from "swiper/modules";
+import {Pagination,Autoplay} from "swiper/modules";
 
 
 defineProps({
@@ -18,7 +18,11 @@ defineProps({
 <template>
   <Swiper
       class="mx-auto w-full slider-simple-a animated"
-      :modules="[Pagination]"
+      :modules="[Pagination,Autoplay]"
+      :autoplay="{
+          delay: 3000,
+          // disableOnInteraction: false,
+        }"
       :space-between="0"
       :slides-per-view="'auto'"
       :grab-cursor="true"
@@ -62,12 +66,12 @@ defineProps({
 .slider-simple-a.animated {
 
   .swiper-wrapper{
-    .slide-item-a:nth-child(1){
-      margin-left: -200px;
-      @media screen and (max-width: 992px) {
-        margin-left: -260px;
-      }
-    }
+    //.slide-item-a:nth-child(1){
+    //  margin-left: -200px;
+    //  @media screen and (max-width: 992px) {
+    //    margin-left: -260px;
+    //  }
+    //}
   }
   .slide-item-a .item-image {
     transform: scale(0.9);

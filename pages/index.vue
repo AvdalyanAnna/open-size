@@ -20,6 +20,7 @@ import VideoPlayer from "~/components/Video.vue";
 import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
 import VHomeForm from "~/components/Blocks/Home/vHomeForm.vue";
 import VSliderBig from "~/components/Sliders/vSliderBig.vue";
+import VSliderTwo from "~/components/Sliders/vSliderTwo.vue";
 
 const {locale} = useI18n()
 
@@ -29,50 +30,7 @@ const {locale} = useI18n()
   <div class="home-gif ">
     <img :src="locale === 'ru'? '/img/home-gif-ru.png' :'/img/home-gif.png'" class="w-full" alt="Banner">
   </div>
-  <div class="flex items-end justify-between lg:mt-[160px] mt-10 z-0 px-2 lg:px-0">
-    <div class="w-[49%]">
-      <h2 class="home-sliders-title w-fit ml-0 lg:ml-auto leading-normal mb-[20px] text-lg lg:text-[51px] lg:leading-[55px] ">
-        <span v-html="$t('home.block1.titleBold')"></span>
-        <span>{{ $t('home.block1.title') }}</span>
-      </h2>
-      <Swiper
-          class="mx-auto w-full"
-          :modules="[SwiperAutoplay]"
-          :slides-per-view="1"
-          :centered-slides="true"
-          :centered-slides-bounds="true"
-          :center-insufficient-slides="true"
-      >
-        <SwiperSlide>
-          <img src="/systems/shoes.png" class="w-full" alt="">
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/systems/woman.png" class="w-full" alt="">
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/systems/done-shoes.png" class="w-full" alt="">
-        </SwiperSlide>
-      </Swiper>
-    </div>
-    <Swiper
-        class="w-[49%]"
-        :modules="[SwiperAutoplay]"
-        :slides-per-view="1"
-        :centered-slides="true"
-        :centered-slides-bounds="true"
-        :center-insufficient-slides="true"
-    >
-      <SwiperSlide>
-        <img src="/cities/future.png" class="w-full" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/cities/palms.png" class="w-full" alt="">
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/cities/down-town.png" class="w-full" alt="">
-      </SwiperSlide>
-    </Swiper>
-  </div>
+<v-slider-two />
 
 
   <div class="home-block2 mx-auto  px-2 lg:px-0">
@@ -144,7 +102,6 @@ const {locale} = useI18n()
         <More class="home-block2-btn lg:mt-[40px] mt-3 lg:ml-auto"/>
       </div>
     </div>
-
     <div>
       <h2 v-html="$t('home.block7.title')" class="title-big text-center bold-block"></h2>
       <div class="lg:mt-[50px] mt-4 flex lg:items-end lg:flex-row flex-col gap-1">
