@@ -111,7 +111,7 @@ defineProps({
     width: 100%;
     object-fit: cover;
     height: 85vh;
-    @media screen and (min-width: 992px) {
+    @media screen and (max-width: 992px) {
       height: auto;
     }
   }

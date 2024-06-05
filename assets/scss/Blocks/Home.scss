@@ -431,6 +431,9 @@
   .description {
     font-size: 20px;
   }
+  .description-big{
+    font-size: 35px;
+  }
   .description-big-30{
     font-size: 23px;
   }
@@ -464,6 +467,9 @@
   .description-big-40{
     font-size: 27px;
   }
+  .description-big{
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 640px) {
   .ru{
@@ -483,9 +489,13 @@
       font-size: 55px;
     }
   }
+  .description-big{
+    font-size: 25px;
+  }
   .description-big-40{
     font-size: 23px;
   }
+
   .description-big-30{
     font-size: 20px;
   }
@@ -501,6 +511,9 @@
     }
   }
   .description-big-40{
+    font-size: 20px;
+  }
+  .description-big{
     font-size: 20px;
   }
 }
