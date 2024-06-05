@@ -14,15 +14,18 @@
       <div class="carbon-slider">
         <Swiper
             class="mx-auto w-full lg:mt-[50px] mt-[30px]"
-            :modules="[SwiperAutoplay]"
+            :modules="[Pagination,Autoplay]"
+            :autoplay="{
+          delay: 3000,
+          // disableOnInteraction: false,
+        }"
             :slides-per-view="1"
             :centered-slides="true"
             :loop="true"
             :navigation="true"
-            :thumbs="true"
-            :centered-slides-bounds="true"
-            :center-insufficient-slides="true"
-            :additional-slide="1"
+            :pagination="{
+              dynamicBullets: true,
+            }"
         >
           <SwiperSlide class="carbon-slider__item">
             <div class="carbon-slider__text">
@@ -84,6 +87,7 @@ import Header from "~/components/UI/Header.vue";
 import Footer from "~/components/UI/Footer.vue";
 import More from "~/components/UI/More.vue";
 import Green from "~/components/UI/Green.vue";
+import {Pagination,Autoplay} from "swiper/modules";
 </script>
 <style lang="scss">
 .carbon-slider {
