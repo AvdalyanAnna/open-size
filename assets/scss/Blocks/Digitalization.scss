@@ -1,16 +1,78 @@
 .digitalization {
+  &-title {
+    position: relative;
+    z-index: 9;
+    &__inner {
+      &-bg{
+        position: absolute;
+        background: linear-gradient(90deg, #CBE54E 0%, #5BA8A0 100%);
+        height: 90%;
+        width: 100%;
+        left: 0;
+        top: 52%;
+        transform: translateY(-50%);
+        z-index: -1;
+        @media screen and (max-width: 1100px) {
+          height: 95%;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          background: #fff;
+          width: 26%;
+          height: 100px;
+          left: 0;
+          bottom: 0;
+          z-index: -2;
+          @media screen and (max-width: 1500px) {
+            width: 20%;
+          }
+          @media screen and (max-width: 1300px) {
+            width: 18%;
+          }
+          @media screen and (max-width: 1100px) {
+            height: 75px;
+            width: 17%;
+          }
+        }
+        &::before{
+          content: '';
+          position: absolute;
+          background: #fff;
+          width: 59%;
+          height: 100px;
+          top: 0;
+          right: 0;
+          z-index: -2;
+          @media screen and (max-width: 1500px) {
+            width: 61%;
+          }
+          @media screen and (max-width: 1100px) {
+            height: 75px;
+          }
+        }
+      }
+
+    }
+  }
+
   &-desc {
     &__block {
-      padding: 150px 60px 50px;
+      margin-top: 50px;
+      padding: 50px 60px 50px;
       background: #F8FEE2;
       @media screen and (max-width: 1100px) {
-        padding: 150px 40px 40px;
+        padding: 40px;
       }
       @media screen and (max-width: 900px) {
-        padding: 150px 30px 40px;
+        padding: 40px 30px;
+        margin-top: 20px;
       }
       @media screen and (max-width: 600px) {
-        padding: 150px 20px 30px;
+        padding: 30px 20px;
       }
 
       &-1 {
@@ -197,12 +259,13 @@
   }
 
   &-images {
-    &__btn{
+    &__btn {
       @media screen and (max-width: 800px) {
         position: unset;
         margin-top: 20px;
       }
     }
+
     &__list {
       margin: -35px 0 20px;
       justify-content: space-between;
@@ -212,3 +275,5 @@
     }
   }
 }
+
+

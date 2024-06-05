@@ -148,7 +148,7 @@ export default {
     },
     digitalization:{
         block1:{
-            title:'',
+            title:'<b>Е-fitting <br> and Digitized comfort</b>',
             desc:'<b>OpenSize</b> innovations have made it possible to perform highly accurate 3D measurements of the internal volumes of clothing and shoes in a dynamic mode, taking into account the complex deformation of materials and to create e-twins of clothing and shoes E-fitting from OpenSize is a virtual simulation of a physical fitting using digital anthropometric data of the buyer (e-twin of the buyer). <span></span> <b>OpenSize</b> smart algorithms (AI) determine the rate of consistency of the e- twin of the buyer’s body and the e-twin of clothes and shoes to select the best fitting models. <span></span> <b>OpenSize</b> has implemented the digitalization of user sensations of comfort in clothing and shoes in the form of parameterized three-dimensional data.',
         },
         block2:{

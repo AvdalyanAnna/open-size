@@ -1,8 +1,17 @@
 <template>
   <Header/>
   <div class="lg:mt-[100px] mt-[80px]"></div>
+  <div class="digitalization-title">
+    <div class="wrapper">
+      <div  class="digitalization-title__inner title-big-3">
+        <b>Е-fitting <br> and Digitized comfort</b>
+        <div class="digitalization-title__inner-bg"></div>
+        <div class="digitalization-title__inner-bg-2"></div>
+      </div>
+    </div>
+  </div>
   <!--  <img src="/txt.png" class="w-full relative z-10 lg:mt-[100px] mt-[40px] " alt="">-->
-  <div class="wrapper relative top-[-105px] ">
+  <div class="wrapper relative">
     <div class="digitalization-desc__block">
       <p class="description" v-html="$t('digitalization.block1.desc')"></p>
     </div>
@@ -10,7 +19,7 @@
   </div>
 
 
-  <div class="digitalization-desc__block-1">
+  <div class="digitalization-desc__block-1 lg:mt-[50px] mt-[30px]" >
     <div class="wrapper">
       <div class="digitalization-desc__block-1__inner">
         <!--      <img src="/react99.png" alt="">-->
