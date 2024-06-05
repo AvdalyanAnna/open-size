@@ -141,6 +141,7 @@
           width: 100%;
         }
       }
+
       @media screen and (max-width: 1023px) {
         display: flex;
         align-items: center;
@@ -207,9 +208,16 @@
   height: auto;
   background: linear-gradient(180deg, #CBE54E 0%, #5BA8A0 100%);
 
+  &.inline {
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(90deg, #CBE54E 0%, #5BA8A0 100%);
+  }
 }
-.ru{
-  .identification-block2 .title-big ,
+
+.ru {
+  .identification-block2 .title-big,
   .identification-block1__left .title-big {
     @media screen and (max-width: 1023px) {
       font-size: 47px;
@@ -219,6 +227,7 @@
     }
 
   }
+
   .identification-block1__left .title-big {
     @media screen and (max-width: 480px) {
       font-size: 26px;

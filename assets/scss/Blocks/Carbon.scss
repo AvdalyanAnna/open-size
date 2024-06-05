@@ -1,0 +1,141 @@
+.carbon {
+  &-inner {
+    @apply flex justify-between items-end mt-[40px];
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-left {
+    width: 548px;
+    @media screen and (max-width: 1023px) {
+      width: 420px;
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 20px;
+      width: 100%;
+      .description, .gradient-color {
+        max-width: 75%;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      .description, .gradient-color {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-right {
+    width: calc(100% - 548px);
+    @media screen and (max-width: 1023px) {
+      width: calc(100% - 420px);
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      img {
+        max-height: 500px;
+        width: 100%;
+        object-fit: contain;
+
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-abs {
+    &__inner {
+      @media screen and (max-width: 900px) {
+      flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+      }
+      &-btn {
+        @media screen and (max-width: 900px) {
+          order: 2;
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+      &-desc {
+        @media screen and (max-width: 1100px) {
+          max-width: 70%;
+        }
+        @media screen and (max-width: 900px) {
+          order: 1;
+          width: 100%;
+          max-width: 100%;
+          padding: 30px;
+        }
+        @media screen and (max-width: 600px) {
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+  &-slider{
+    &__item{}
+    &__text{
+      padding: 30px 100px;
+      background: #5BA8A0;
+      .description-big-40{
+        color: #fff;
+        font-weight: 400;
+        font-family: 'Wix Madefor Text',sans-serif;
+      }
+      @media screen and (max-width: 900px) {
+        padding: 30px 70px;
+      }
+      @media screen and (max-width: 900px) {
+        padding: 20px 50px;
+      }
+    }
+    &__img{
+      width: 100%;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.co2-content {
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.co2 {
+  padding: 40px 20px 60px;
+  background: #CBE54E;
+
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 93px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  @media screen and (max-width: 900px) {
+    font-size: 70px;
+    line-height: 120%;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 50px;
+    padding: 30px 15px 50px;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 15px 30px 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.font-f {
+  font-family: 'Familjen Grotesk', sans-serif;
+}
