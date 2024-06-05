@@ -367,3 +367,38 @@
     }
   }
 }
+
+.ru {
+  .i3d-block__right .description-big-40 {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .i3d-abs__inner .gradient-color:nth-child(1) {
+      top: 55%;
+      height: 400px;
+    }
+    .i3d-abs__inner .gradient-color:nth-child(2) {
+      top: 80%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+
+    .i3d-block__right .description-big-40 {
+      font-size: 28px;
+    }
+    .i3d-second__text span{
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .i3d-block__right .description-big-40 {
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .i3d-block__right .description-big-40 {
+      font-size: 18px;
+    }
+  }
+}

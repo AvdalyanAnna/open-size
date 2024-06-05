@@ -35,7 +35,7 @@
             </h2>
             <p v-html="$t('3d.block3.desc1')" class="i3d-abs__inner-desc-1 description mt-[20px] ">
             </p>
-            <p v-html="$t('3d.block3.desc2')" class="i3d-abs__inner-desc-2 mr-[20px] description-30 font-bold text-white">
+            <p v-html="$t('3d.block3.desc2')" class="i3d-abs__inner-desc-2 mr-[20px] description-big-30 font-bold text-white">
             </p>
             <p v-html="$t('3d.block3.desc3')" class="i3d-abs__inner-desc-3 description">
             </p>
