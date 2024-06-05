@@ -1,0 +1,214 @@
+.digitalization {
+  &-desc {
+    &__block {
+      padding: 150px 60px 50px;
+      background: #F8FEE2;
+      @media screen and (max-width: 1100px) {
+        padding: 150px 40px 40px;
+      }
+      @media screen and (max-width: 900px) {
+        padding: 150px 30px 40px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 150px 20px 30px;
+      }
+
+      &-1 {
+        position: relative;
+
+        .gradient-color {
+          height: 100%;
+          width: 50vw;
+          position: absolute;
+          left: 0;
+          z-index: -1;
+        }
+
+        .description-26 {
+          background-color: #fff;
+          margin-left: auto;
+          max-width: 1100px;
+          width: 100%;
+          //padding-right: 25px;
+          padding-left: 25px;
+          @media screen and (max-width: 1100px) {
+            max-width: 90%;
+          }
+          @media screen and (max-width: 600px) {
+            max-width: 95%;
+            padding-left: 16px;
+          }
+          @media screen and (max-width: 480px) {
+            max-width: 98%;
+          }
+        }
+      }
+
+      &-3 {
+        position: relative;
+
+        .gradient-color {
+          height: 50%;
+          width: 50vw;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: -1;
+        }
+
+        .description {
+          background-color: #fff;
+          margin-left: auto;
+          max-width: 748px;
+          width: 100%;
+          //padding-right: 25px;
+          padding-left: 25px;
+          @media screen and (max-width: 1100px) {
+            max-width: 90%;
+          }
+          @media screen and (max-width: 600px) {
+            max-width: 95%;
+            padding-left: 16px;
+          }
+          @media screen and (max-width: 480px) {
+            max-width: 98%;
+          }
+        }
+      }
+
+      &-2 {
+        position: relative;
+
+        .gradient-color {
+          height: 100%;
+          width: 50vw;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1;
+        }
+
+        .description {
+          background-color: #fff;
+          max-width: 638px;
+          width: 100%;
+          padding-right: 40px;
+          //padding-left: 25px;
+          @media screen and (max-width: 1100px) {
+            max-width: 90%;
+            padding-right: 25px;
+          }
+          @media screen and (max-width: 600px) {
+            max-width: 95%;
+            padding-left: 16px;
+          }
+          @media screen and (max-width: 480px) {
+            max-width: 98%;
+          }
+        }
+      }
+    }
+  }
+
+  &-block {
+    overflow: hidden;
+
+    &__inner {
+      @media screen and (max-width: 1100px) {
+        padding-top: 40px;
+        width: 100%;
+      }
+    }
+
+    &__images {
+      @media screen and (max-width: 1100px) {
+        position: unset;
+        max-height: 150px;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+        &:nth-child(1) {
+          display: block;
+        }
+      }
+
+      &-list {
+        display: contents;
+        @media screen and (max-width: 1100px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .description-big {
+      @media screen and (max-width: 1100px) {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &-last {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: calc(50% - 10px);
+
+      img {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &__right {
+      width: calc(50% - 10px);
+
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        img {
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+
+  }
+
+  &-images {
+    &__btn{
+      @media screen and (max-width: 800px) {
+        position: unset;
+        margin-top: 20px;
+      }
+    }
+    &__list {
+      margin: -35px 0 20px;
+      justify-content: space-between;
+      @media screen and (max-width: 800px) {
+        margin: 20px 0;
+      }
+    }
+  }
+}
