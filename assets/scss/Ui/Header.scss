@@ -8,6 +8,12 @@
   top: 0;
   left: 0;
   z-index: 99;
+  @media screen and (max-width: 1023px) {
+    min-height: 50px;
+    &-test{
+      padding: 10px 16px;
+    }
+  }
   &-inner{
     max-width: 1522px;
     width: 100%;
