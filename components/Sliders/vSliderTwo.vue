@@ -11,9 +11,9 @@ const smallSlider = ref(['/systems/shoes.png','/systems/woman.png','/systems/don
 const bigSlider = ref(['/cities/future.png','/cities/palms.png','/cities/down-town.png'])
 </script>
 <template>
-  <div class="flex items-end justify-between lg:mt-[160px] mt-10 z-0 px-2 lg:px-0">
-    <div class="w-[49%]">
-      <h2 class="home-sliders-title w-fit ml-0 lg:ml-auto leading-normal mb-[20px] text-lg lg:text-[51px] lg:leading-[55px] ">
+  <div class="home-page__slider">
+    <div class="home-page__slider-left">
+      <h2 class="home-sliders-title">
         <span v-html="$t('home.block1.titleBold')"></span>
         <span>{{ $t('home.block1.title') }}</span>
       </h2>
@@ -36,16 +36,19 @@ const bigSlider = ref(['/cities/future.png','/cities/palms.png','/cities/down-to
         </SwiperSlide>
       </Swiper>
     </div>
-    <Swiper
-        class="w-[49%] mySwiper"
-        :modules="[FreeMode, Navigation, Thumbs]"
-        @swiper="setThumbsSwiper"
-        :slides-per-view="1"
-    >
-      <SwiperSlide v-for="(item,index) in bigSlider" :key="index">
-        <img :src="item" class="w-full" alt="">
-      </SwiperSlide>
-    </Swiper>
+    <div class="home-page__slider-right">
+      <Swiper
+          class="w-[49%] mySwiper"
+          :modules="[FreeMode, Navigation, Thumbs]"
+          @swiper="setThumbsSwiper"
+          :slides-per-view="1"
+      >
+        <SwiperSlide v-for="(item,index) in bigSlider" :key="index">
+          <img :src="item" class="w-full" alt="">
+        </SwiperSlide>
+      </Swiper>
+    </div>
+
   </div>
 </template>
 
