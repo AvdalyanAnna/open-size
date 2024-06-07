@@ -13,9 +13,9 @@ const bigSlider = ref(['/cities/future.png','/cities/palms.png','/cities/down-to
 <template>
   <div class="home-page__slider">
     <div class="home-page__slider-left">
-      <h2 class="home-sliders-title">
+      <h2 class="home-sliders-title lg:mb-[28px] mb-[20px]">
         <span v-html="$t('home.block1.titleBold')"></span>
-        <span>{{ $t('home.block1.title') }}</span>
+        <span v-html="$t('home.block1.title')"></span>
       </h2>
       <Swiper
           class="mx-auto w-full mySwiper2"

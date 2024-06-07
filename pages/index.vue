@@ -22,7 +22,7 @@ const {locale} = useI18n()
 
   <div class="home-block2 home-page__block mx-auto  px-2 lg:px-0">
     <div class="wrapper">
-      <h2 class="title-big">
+      <h2 class="home-block2-title">
         <b>{{ $t('home.block2.title') }}</b>
       </h2>
       <div class="home-page__block-inner">
@@ -33,12 +33,14 @@ const {locale} = useI18n()
       </div>
     </div>
   </div>
+
   <div class="home-block3">
+    <h2
+        v-html="$t('home.block3.title')"
+        class="home-block3-title text-center mt-6 leading-normal text-lg lg:text-[60px] lg:leading-[70px]">
+    </h2>
     <div class="wrapper">
-      <h2
-          v-html="$t('home.block3.title')"
-          class="title-big text-center mt-6 leading-normal text-lg lg:text-[60px] lg:leading-[70px]">
-      </h2>
+
       <div class="bg-[#F8FEE2] home-block3-color">
         <div>
           <p v-html="$t('home.block3.description1')" class="description home-block3-desc w-full ">
@@ -59,7 +61,7 @@ const {locale} = useI18n()
 
   <div class="wrapper">
     <div class="home-block4">
-      <h2 v-html="$t('home.block4.title')" class="home-block4-title title-big  text-center ">
+      <h2 v-html="$t('home.block4.title')" class="home-block2-title   text-center ">
       </h2>
     </div>
   </div>
@@ -144,7 +146,7 @@ const {locale} = useI18n()
         <div class="home-page__opensize-left">
           <h2 v-html="$t('home.block8.title')" class="title">
           </h2>
-          <p v-html="$t('home.block8.desc')" class="relative  lg:mt-[100px] mt-4 description"></p>
+          <p v-html="$t('home.block8.desc')" class="relative  lg:mt-[50px] mt-4 description"></p>
           <div class="home-page__opensize-btns lg:mt-[75px] mt-2">
             <More class="home-block2-btn mr-[20px]"/>
             <button class=" text-white uppercase bg-[#5BA8A0] lg:px-[20px] py-1  lg:py-[10px] px-1  font-light">
@@ -156,10 +158,15 @@ const {locale} = useI18n()
           <img src="/Rectangle%20113%20(2).png" alt="">
         </div>
       </div>
+    </div>
+  </div>
 
+  <div class="lg:mt-[130px] mt-6">
+<div class="px-[15px]">
+  <h2 v-html="$t('home.block9.title')" class="title-big text-center lg:mb-[60px] mb-[20px]"></h2>
+</div>
+        <div class="wrapper">
 
-      <div class="lg:mt-[130px] mt-6">
-        <h2 v-html="$t('home.block9.title')" class="title-big text-center lg:mb-[60px] mb-[20px]"></h2>
         <div class="home-page__abs">
           <div class="home-page__abs-item">
             <div class="gradient-color"></div>
@@ -174,10 +181,13 @@ const {locale} = useI18n()
           <img class="home-page__abs-img-1" src="/Rectangle%20137.png" alt="">
           <More class="ml-auto lg:mt-0 lg:ml-4"/>
         </div>
+        </div>
       </div>
-      <v-home-form/>
-    </div>
+  <div class="wrapper">
+    <v-home-form/>
   </div>
+
+
 
 
   <!--  </div>-->
