@@ -105,7 +105,7 @@
     }
 
     &-desc {
-      @apply  px-[20px] lg:px-[15px] lg:py-[55px] py-[25px] lg:max-w-[1135px]  w-full;
+      @apply px-[20px] lg:px-[15px] lg:py-[55px] py-[25px] lg:max-w-[1135px]  w-full;
       font-family: 'Wix Madefor Text', sans-serif;
       margin: 0 auto;
       font-weight: 400;
@@ -235,7 +235,11 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
+  @media screen and (max-width: 1400px) {
+    max-width: 1100px;
+  }
 }
+
 
 .title {
   font-family: 'Familjen Grotesk', sans-serif;
@@ -275,6 +279,7 @@
 
     }
   }
+
   &-big-3 {
     font-family: 'Familjen Grotesk', sans-serif;
     font-size: 105px;
@@ -287,8 +292,9 @@
 
     }
   }
-  &-sub{
-    font-family: 'Wix Madefor Text',sans-serif;
+
+  &-sub {
+    font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 130%;
@@ -307,7 +313,8 @@
     display: block;
     margin-bottom: 32px;
   }
-  &-2{
+
+  &-2 {
     font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -318,125 +325,144 @@
       display: block;
       margin-bottom: 16px;
     }
-    &.font-bold{
+
+    &.font-bold {
       font-weight: 700;
     }
   }
-  &-big{
-    font-family: 'Wix Madefor Text',sans-serif;
+
+  &-big {
+    font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 130%;
     color: #202020;
   }
-  &-big-40{
-    font-family: 'Wix Madefor Text',sans-serif;
+
+  &-big-40 {
+    font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 130%;
     color: #202020;
-    b{
+
+    b {
       font-weight: 700;
     }
   }
-  &-big-30{
-    font-family: 'Wix Madefor Text',sans-serif;
+
+  &-big-30 {
+    font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 130%;
     color: #202020;
-    b{
+
+    b {
       font-weight: 700;
     }
   }
-  &-21{
+
+  &-21 {
     font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 21px;
     line-height: 130%;
     color: #202020;
+
     span {
       display: block;
       margin-bottom: 16px;
     }
   }
-  &-26{
+
+  &-26 {
     font-family: 'Wix Madefor Text', sans-serif;
     font-weight: 400;
     font-size: 26px;
     line-height: 130%;
     color: #202020;
+
     span {
       display: block;
       margin-bottom: 16px;
     }
   }
-  &.bold{
+
+  &.bold {
     font-weight: 500;
   }
 }
 
 
-.ru{
+.ru {
   .title {
-    font-family: 'Nunito Sans',sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 49px;
     line-height: 120%;
+
     b {
       font-weight: 800;
     }
 
     &-big {
-      font-family: 'Nunito Sans',sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-size: 55px;
       line-height: 110%;
+
       b {
         font-weight: 800;
       }
 
     }
+
     &-big-2 {
-      font-family: 'Nunito Sans',sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-size: 72px;
       line-height: 110%;
+
       b {
         font-weight: 800;
       }
     }
   }
 }
-.bold-block b{
+
+.bold-block b {
   display: block;
 }
 
-.text-white{
+.text-white {
   color: #fff !important;
 }
 
-@media screen and (max-width: 1200px) {
-  .title{
+@media screen and (max-width: 1400px) {
+  .title {
     font-size: 46px;
   }
-  .title-sub{
+  .title-sub {
     font-size: 40px;
   }
   .title-big {
     font-size: 65px;
-    &-2,&-3{
+
+    &-2, &-3 {
       font-size: 80px;
     }
   }
 
-  .ru{
-    .title{
+  .ru {
+    .title {
       font-size: 40px;
     }
+
     .title {
       &-big {
         font-size: 50px;
       }
-      &-big-2,&-big-3 {
+
+      &-big-2, &-big-3 {
         font-size: 60px;
       }
     }
@@ -444,122 +470,132 @@
   .description {
     font-size: 20px;
   }
-  .description-big{
+  .description-big {
     font-size: 35px;
   }
-  .description-big-30{
+  .description-big-30 {
     font-size: 23px;
   }
-  .description-big-40{
+  .description-big-40 {
     font-size: 30px;
   }
-  .description-26{
+  .description-26 {
     font-size: 22px;
   }
 }
+
 @media screen and (max-width: 900px) {
-  .ru{
-    .title{
+  .ru {
+    .title {
       font-size: 30px;
     }
+
     .title {
       &-big {
         font-size: 45px;
       }
+
       &-big-2, &-big-3 {
         font-size: 50px;
       }
     }
   }
-  .title{
+  .title {
     font-size: 36px;
   }
-  .title-sub{
+  .title-sub {
     font-size: 30px;
   }
   .title-big {
     font-size: 55px;
-    br{
+
+    br {
       display: none;
     }
-    &-2,&-3{
+
+    &-2, &-3 {
       font-size: 70px;
-      br{
+
+      br {
         display: none;
       }
     }
   }
-  .description-big-40{
+  .description-big-40 {
     font-size: 27px;
   }
-  .description-big{
+  .description-big {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 640px) {
-  .ru{
-    .title{
+  .ru {
+    .title {
       font-size: 26px;
     }
+
     .title {
       &-big {
         font-size: 35px;
       }
+
       &-big-2, &-big-3 {
         font-size: 40px;
       }
     }
   }
-  .title{
+  .title {
     font-size: 30px;
   }
-  .title-sub{
+  .title-sub {
     font-size: 24px;
   }
   .title-big {
     font-size: 45px;
 
-    &-2,&-3{
+    &-2, &-3 {
       font-size: 55px;
     }
   }
-  .description-big{
+  .description-big {
     font-size: 25px;
   }
-  .description-big-40{
+  .description-big-40 {
     font-size: 23px;
   }
 
-  .description-big-30{
+  .description-big-30 {
     font-size: 20px;
   }
 
   .description {
     font-size: 16px;
   }
-  .description-26{
+  .description-26 {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 481px) {
-  .title{
+  .title {
     font-size: 26px;
   }
-  .title-sub{
+  .title-sub {
     font-size: 20px;
   }
   .title-big {
-    &-2,&-3{
+    &-2, &-3 {
       font-size: 45px;
     }
   }
-  .description-big-40{
+  .description-big-40 {
     font-size: 20px;
   }
-  .description-big{
+  .description-big {
     font-size: 20px;
   }
-  .description-26{
+  .description-26 {
     font-size: 16px;
   }
 }
