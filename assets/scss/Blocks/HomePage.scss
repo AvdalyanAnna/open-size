@@ -453,3 +453,16 @@
 .title-big-600 b {
   font-weight: 600;
 }
+
+.home-sliders-title{
+  @media screen and (max-width: 1800px) {
+    padding-left: 15px;
+  }
+}
+.home-page__slider{
+  @media screen and (max-width: 1400px) {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
